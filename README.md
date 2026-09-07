@@ -1,4 +1,4 @@
-# turkce-yazi-yazma
+# Daha iyi Türkçe yazı yazma
 
 Yapay zeka Türkçe yazınca çoğu zaman İngilizce düşünüp Türkçe yazar: "önemli bir rol
 oynamaktadır", "bir şekilde", "tarafından", "yalnızca X değil aynı zamanda Y",
