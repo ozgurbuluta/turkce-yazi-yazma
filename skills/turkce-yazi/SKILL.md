@@ -224,6 +224,11 @@ Ses arşivinin yapısı, dosya başlığı ve tercihler dosyasının biçimi:
 - **Aşırı düzeltme**: her "bir"i silmek, her edilgeni etkene çevirmek. "Bir gün"
   doğaldır; "bir öğretmen olarak" değildir.
 - **Resmileştirme**: -yor'u -maktadır, "şey"i "husus" yapmak. Ters yön.
+- **Kılavuz sesi**: okura anlatırken her cümleyi geniş zamanla ve -dir ile bitirmek
+  ("gerekmez", "yeter", "oluşur", "skill'dir"). Konuşan biri "gerekmiyor",
+  "yeterli", "oluşacak" der. Emir kipli başlık ("Kullan") yerine ad ("Kullanım");
+  iki kelimelik bilgi cümlesi ("Kod MIT.") yerine ya tam cümle ya hiç. Çiftler
+  `references/kaliplar.md` 9'da.
 - **Süsleme**: eğretileme, üçlü sıralama, retorik soru eklemek; AI kalıbı ekliyorsun.
 - **Parçalama**: uzun cümleleri kısa kısa kesip "ritim" sanmak. "Aldı. Bilmiyordu.
   Öğrendim." üst üste gelince metin doğal değil, kesik ve özensiz olur; bu da bir
@@ -234,7 +239,7 @@ Ses arşivinin yapısı, dosya başlığı ve tercihler dosyasının biçimi:
 
 ## Dosyalar
 
-- `references/kaliplar.md` — Türkçe AI kalıpları, önce/sonra
+- `references/kaliplar.md` — Türkçe AI kalıpları, kılavuz sesi, önce/sonra
 - `references/ceviri-kokusu.md` — çeviri izleri, kategoriyle; parçalı cümle dahil
 - `references/ritim.md` — bağlama/bölme, ulaç tablosu, ölçüt paragraflar
 - `references/puanlama.md` — 6 eksenli puan

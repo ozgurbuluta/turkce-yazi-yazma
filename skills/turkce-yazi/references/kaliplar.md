@@ -134,6 +134,42 @@ Bu depo düz yazımı benimser: "zeka", "hala", "kağıt", "imkan", "resmi", "hi
 düzeltmede düz biçime çevrilir. Sebep: gündelik Türkçe böyle yazılıyor; şapkalı
 biçim metni olduğundan resmi gösteriyor ve tutarsız kullanılıyor.
 
+## 9. Kılavuz sesi: geniş zaman ve -dir yığını
+
+Okura bir şeyi anlatırken (kurulum, kullanım, "şunu yapınca şu olur") her cümle
+geniş zamanla bitince metin insan sesi değil, cihaz kılavuzu sesi verir: "yapar",
+"oluşur", "gerekmez", "yeter", "kurarsın", "-dir". Tek tek doğru; üst üste gelince
+soğuk ve dikte eder gibi. Konuşan biri ne olacağını -yor ve -acak ile anlatır,
+"-dir" demez, iki kelimelik bilgi cümlesi kurmaz. Bunlar okurun kendi düzeltmesinden
+alınmış çiftler; hepsi aynı yöne gidiyor:
+
+- "Ayrıca bir şey yapman gerekmez." → "Ayrıca bir şey yapman gerekmiyor."
+- "'Düzelt' demen yeter." → "'Düzelt' demen yeterli."
+- "Onun yerine kendi GPT'ni kurarsın." → "Onun yerine kendi GPT'ni kurman gerek."
+- "`dist/chatgpt/` adında bir klasör oluşur." → "... adında bir klasör oluşacak."
+- "Dört şeye bakar:" → "Dört şeye bakarak buna karar veriyor:"
+- "Kendi yazılarını verirsen senin gibi yazar." → "... senin sesini anlar ve o
+  şekilde yazmaya başlar."
+- "'Ses arşivimi kur' de; profilini çıkarır." → "... de; profilini çıkarsın." (İstek
+  cümlesinden sonra sonuç -sın ile gelir; -ır ile gelince iki ayrı bildirim olur.)
+- "... yazılmış bir metne çeviren bir skill'dir." → "... çeviren bir skill olması
+  için tasarlandı."
+- "Kod MIT." / "Cevap hep metin hakkındadır: hangi cümle, neden, nasıl." → silindi.
+  İki kelimelik bilgi cümlesi ve -dır'lı özet, paragrafın sonuna yapıştırılmış
+  etiket gibi durur.
+- Başlık "Kullan" → "Kullanım". Emir kipli başlık düğme adı gibi okunur; başlık
+  addır.
+- "Bu depoyu indir" → "Bu repoyu indir". Okurun kullandığı sözcük neyse o; yaygın
+  yabancı sözcüğe zorla Türkçe karşılık koymak da resmileştirmedir.
+- Giriş cümlesinde dört tırnaklı örnek üst üste ("önemli bir rol oynamaktadır",
+  "bir şekilde", "tarafından", "sonuç olarak") → tek düz cümle: "İngilizce düşünüp
+  Türkçe'ye tercüme ediyor." Örnek yığını ilk cümlede okuru yorar; örnek gövdede
+  gelir.
+
+Geniş zaman yanlış değildir: genel doğru ("su yüz derecede kaynar") ve öneri ("bunu
+akşam yapma") geniş zaman ister. Sorun yığındır; paragraftaki yüklemlerin çoğu -ar/-ır
+ve -dir ise, okura ne olacağını anlatan cümleleri -yor/-acak'a çevir, kalanı bırak.
+
 ## Kalıp bulunca ne yapılır
 
 1. Kalıbın yerine ne koyacağını değil, kalıbın **neyi gizlediğini** sor.

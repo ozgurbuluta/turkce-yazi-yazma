@@ -301,7 +301,10 @@ kürsü değil.
   kullanıcıya sor.
 - Metin boyunca tek hitap; "sen" ile "siz" karışmaz.
 - "Biz" okurla yazarı kapsıyorsa olur ("bu işi yapanlar olarak biz").
-- Zaman: -yor ve -dı; geniş zaman öneri cümlelerinde. -maktadır yok.
+- Zaman: -yor ve -dı; geniş zaman öneri ve genel doğru cümlelerinde. Okura ne
+  olacağını anlatırken -yor ve -acak ("klasör oluşacak", "bir şey yapman
+  gerekmiyor"); "oluşur", "gerekmez", "yeter", "-dir" üst üste gelince kılavuz sesi
+  çıkar (kaliplar.md 9). -maktadır yok.
 
 ### Açılış hareketleri
 
