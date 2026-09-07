@@ -1,9 +1,8 @@
 # Daha iyi Türkçe yazı yazma
 
-Yapay zeka Türkçe yazınca çoğu zaman İngilizce düşünüp Türkçe yazar: "önemli bir rol
-oynamaktadır", "bir şekilde", "tarafından", "sonuç olarak". `turkce-yazi`, o metni
+Yapay zeka Türkçe yazınca çoğu zaman İngilizce düşünüp Türkçe'ye tercüme ediyor. `turkce-yazi`, o metni
 Türkçe düşünülmüş, somut, akıcı ve senin sesinle yazılmış bir metne çeviren bir
-skill'dir. Claude.ai, Cowork, Claude Code ve ChatGPT'de çalışır.
+skill olması için tasarlandı. Claude.ai, Cowork, Claude Code ve ChatGPT'de çalışır.
 
 ## Kur
 
@@ -12,7 +11,7 @@ skill'dir. Claude.ai, Cowork, Claude Code ve ChatGPT'de çalışır.
 1. [Releases](https://github.com/ozgurbuluta/turkce-yazi-yazma/releases) sayfasından
    `turkce-yazi.zip` dosyasını indir.
 2. Claude.ai'de Ayarlar → Capabilities → Skills bölümüne git, zip'i yükle. Cowork
-   aynı listeyi görür; ayrıca bir şey yapman gerekmez.
+   aynı listeyi görür; ayrıca bir şey yapman gerekmiyor.
 3. Yeni bir sohbet aç, Türkçe bir metin yapıştır, "düzelt" de.
 
 **Claude Code**
@@ -23,20 +22,20 @@ Terminalde şunu çalıştır:
 npx skills add ozgurbuluta/turkce-yazi-yazma
 ```
 
-Sonra Türkçe metin yapıştırıp "düzelt" demen yeter. İstersen `/turkce-yazi` yazarak
+Sonra Türkçe metin yapıştırıp "düzelt" demen yeterli. İstersen `/turkce-yazi` yazarak
 da başlatabilirsin.
 
 **ChatGPT**
 
-ChatGPT'de skill yok; onun yerine kendi GPT'ni kurarsın:
+ChatGPT'de skill yok; onun yerine kendi GPT'ni kurman gerek:
 
-1. Bu depoyu indir (yeşil "Code" düğmesi → Download ZIP), aç.
+1. Bu repoyu indir (yeşil "Code" düğmesi → Download ZIP), aç.
 2. Terminalde `python3 tools/paketle.py` çalıştır. `dist/chatgpt/` adında bir klasör
-   oluşur.
+   oluşacak.
 3. ChatGPT'de "Create a GPT" de. `instructions.md` dosyasının içini Instructions
    kutusuna yapıştır, `knowledge/` klasöründeki dosyaları Knowledge'a yükle.
 
-## Kullan
+## Kullanım
 
 | Ne dersin | Ne olur |
 |---|---|
@@ -52,7 +51,7 @@ Tür (deneme, makale, blog) söylemezsen sorar.
 
 ## İyi metin neye benzer
 
-Tek ölçüt: bu cümleyi Türkçe düşünen biri böyle mi kurardı? Dört şeye bakar:
+Tek ölçüt: bu cümleyi Türkçe düşünen biri böyle mi kurardı? Dört şeye bakarak buna karar veriyor:
 
 1. **Türkçe düşünülmüş.** "Rapor bakanlık tarafından hazırlandı" değil, "Raporu
    bakanlık hazırladı". "Etkili bir şekilde" değil, "iyi".
@@ -65,18 +64,16 @@ Tek ölçüt: bu cümleyi Türkçe düşünen biri böyle mi kurardı? Dört şe
 
 Bir de: düzeltme işareti (â, î, û) kullanmaz; zeka, hala, kağıt.
 
-Cevap hep metin hakkındadır: hangi cümle, neden, nasıl. Teknik ayrıntı görmezsin.
-
 ## Kendi sesin
 
 Skill, arşiv olmadan da çalışır; ama beğendiğin kendi yazılarını verirsen senin
-gibi yazar.
+sesini anlar ve o şekilde yazmaya başlar.
 
 1. Depodaki `voice.example` klasörünü `voice` adıyla kopyala.
 2. İçindeki örnek yazıları sil, kendi yazılarından en az beşini
    `voice/onaylanan/deneme/` (ya da `makale/`, `blog/`) altına koy. Her dosyanın
    başına örnekteki gibi tür ve tarih yaz.
-3. Claude'a "ses arşivimi kur" de; yazılarını okuyup profilini çıkarır.
+3. Claude'a "ses arşivimi kur" de; yazılarını okuyup profilini çıkarsın.
 
 Bundan sonra her görevde arşivinden konuya en yakın iki üç yazıyı örnek alır.
 "Bunu hatırla" dediğin kurallar da `voice/tercihler.md` dosyasında birikir.
@@ -88,7 +85,7 @@ Projenin talimatlarına yapıştırırsın.
 Skill'in içindeki Python araçları (kalıp tarama, ritim ölçümü, kaynak hizalama)
 tek başına da çalışır; nasıl olduğu [AGENTS.md](AGENTS.md) ve
 [docs/](docs/) içinde. Veri kaynakları ve lisanslar
-[docs/kaynaklar.md](docs/kaynaklar.md). Kod MIT.
+[docs/kaynaklar.md](docs/kaynaklar.md).
 
 ---
 
