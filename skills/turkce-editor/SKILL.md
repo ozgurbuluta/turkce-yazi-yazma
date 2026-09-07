@@ -62,6 +62,8 @@ Hepsi `--json` alır. Betik çalıştıramıyorsan (araç yoksa) `references/` d
 
 Betikler **yaklaşıktır**: edilgen sayımı ve ek soyma kaba kurallarla çalışır. Sayıyı değil eğilimi oku. Betiğin bulmadığı sorunu sen bulursun; betiğin bulduğunu da gözünle doğrularsın.
 
+Betik sayıları **nereye bakacağını** söyler, ne yapacağını söylemez. "CV düşük" bir kural değil, bir işarettir: o paragrafa gidip okursun. Karar her zaman paragrafta, kulakla verilir: bu paragrafı biri yüksek sesle okusa nerede takılır, nerede nefes alır, hangi cümle diğerine yaslanmak istiyor?
+
 ### 2. Bulgu raporu
 
 Her bulgu üç parçadır: **cümle** (alıntı) → **neden** (hangi kural; `references/` içindeki adıyla) → **öneri** (yeniden yazılmış hali). Bulguları önem sırasına koy:
@@ -72,7 +74,7 @@ Her bulgu üç parçadır: **cümle** (alıntı) → **neden** (hangi kural; `re
 4. Ritim ve yapı (`references/ritim.md`)
 5. Sözcük seçimi (sıklık, tekrar, kayıt uyumu)
 
-`incele` kipinde burada dur. Raporun sonuna betik puanlarını ve `references/puanlama.md` ile verdiğin 6 eksenli puanı ekle.
+`incele` kipinde burada dur. Raporun sonuna tek satır puan ekle (`references/puanlama.md`); kullanıcı isterse eksenleri aç. Rapor metnin cümleleriyle konuşur, araç adlarıyla değil (bkz. 5).
 
 ### 3. Birinci geçiş: yeniden yaz
 
@@ -81,6 +83,28 @@ Her bulgu üç parçadır: **cümle** (alıntı) → **neden** (hangi kural; `re
 - Boş sözü sil, yerine bir şey koyma. Metnin kısalması normaldir; %30 kısalma olağan.
 - Sesi koru: kullanıcının cümlesi ironikse ironik kalır, sertse sert kalır. Sen yumuşatmazsın.
 - Türe uy: reel'de yazı dili sözcüğü, makalede sohbet tonu olmaz.
+- **Bölmek varsayılan değildir; bağlamak varsayılandır.** Türkçe iki düşünceyi ayrı
+  cümle yapmak yerine ulaçla bağlar: "-ip", "-erek", "-ince", "-diğinde", "-ken",
+  "-diği için". "Kutuyu aldı. Ne olduğunu bilmiyordu." İngilizce vuruşun kopyasıdır;
+  Türkçesi "Ne olduğunu bilmeden kutuyu aldı." Art arda iki cümle gördüğünde sor:
+  aralarında sebep, zaman, koşul ya da ardışıklık ilişkisi var mı? Varsa bağla.
+  Ayrı kalacaksa bir sebebi olmalı: vuruş (paragrafta bir), duraklama, tonun
+  değişmesi. Sebep yoksa bağla. `references/ritim.md` bunu örneklerle anlatır.
+
+### 3b. Örnekle karşılaştır
+
+Yeniden yazdığın en uzun paragrafı bir **ölçüt paragrafın** yanına koy ve ikisini
+üst üste oku:
+
+- `voice/onaylanan/` varsa aynı türden, `ornek_sec.py` ile seçilmiş bir paragraf.
+- Yoksa `references/ritim.md` içindeki tür başına ölçüt paragraf.
+
+Sonra şu soruları cevapla, kendine dürüstçe: Hangisi daha çok konuşan bir insana
+benziyor? Seninkinde özne her cümlede yeniden mi kuruluyor ("Babam aldı. Babam
+bilmiyordu.")? Seninkinde her cümle aynı boyda mı, ya da tersine, her cümle üç
+kelime mi? Ölçüt paragraf bir cümlede söylediğini sen üç cümlede mi söylüyorsun?
+Cevaplar seni bağlamaya çağırıyorsa bağla, bölmeye çağırıyorsa böl. Sayıya değil
+kulağa göre.
 
 ### 4. Öz-denetim
 
@@ -92,12 +116,23 @@ Yeniden yazdığın metni **kendin** tara:
 
 ### 5. İkinci geçiş ve teslim
 
-Kalan bulguları düzelt. Teslimde dört şey verilir:
+Kalan bulguları düzelt. Teslimde dört şey verilir, bu sırayla:
 
 1. **Son metin** — kod bloğu içinde değil, düz.
-2. **Puan** — `references/puanlama.md` eksenleriyle; önce/sonra.
-3. **Değişiklik özeti** — 3-7 madde, en büyük değişiklikler; küçük düzeltmeleri sayma.
-4. **İddia listesi** — kaldırılan ya da değiştirilen her iddia, sayı ve ad. Boşsa "İddia değişmedi" yaz.
+2. **Değişiklik özeti** — 3-5 madde, en büyük değişiklikler, metnin diliyle: "İlk
+   paragraftaki üç iddia cümlesi kanıtsızdı, sildim." Küçük düzeltmeleri sayma.
+3. **İddia listesi** — kaldırılan ya da değiştirilen her iddia, sayı ve ad. Boşsa
+   "İddia değişmedi" yaz.
+4. **Puan** — tek satır, önce → sonra; istenirse `references/puanlama.md` eksenleriyle açılır.
+
+**Yanıt metin hakkındadır, araçlar hakkında değil.** Kullanıcı bir yazı verdi, yazı
+hakkında konuşulur. Şunlar yanıtta yer almaz: betik adları, dosya yolları, skill
+adları, "betikleri çalıştırdım", "referans dosyasına göre", kalıp listesi
+kategorileri (`gecis`, `hafif_fiil` gibi kodlar), JSON çıktısı, depo yapısı. Bulgu
+söylerken kuralın adını değil kendisini söylersin: "`tarafından` (edilgen)" değil,
+"Raporu kim hazırladı? Bakanlık. O zaman özne bakanlık olsun." Sayılar yalnızca
+kullanıcı sorarsa ve tek satırda verilir. `incele` kipinde de aynı: rapor metnin
+cümlelerinden oluşur, aracın çıktısından değil.
 
 ## Kesin kurallar
 
@@ -117,6 +152,12 @@ Kalan bulguları düzelt. Teslimde dört şey verilir:
 - **Aşırı düzeltme**: her "bir"i silmek, her edilgeni etkene çevirmek. Kural, kalıba değil cümleye bakar. "Bir gün" doğaldır; "bir öğretmen olarak" değildir.
 - **Resmileştirme**: -yor'u -maktadır yapmak, "şey"i "husus" yapmak. Ters yön.
 - **Süsleme**: eğretileme, üçlü sıralama, retorik soru eklemek. Metni doğallaştırırken AI kalıbı ekliyorsun demektir.
+- **Parçalama**: uzun cümleleri kısa kısa kesip "ritim" sanmak. "Aldı. Bilmiyordu.
+  Öğrendim." üst üste gelince metin doğal değil, özensiz ve nefessiz olur; üstelik
+  bu da bir İngilizce kopyasıdır (vuruşlu reklam dili). Kısa cümle bir şeyi vurur;
+  vuracak bir şey yoksa cümle komşusuna bağlanır. Metni yeniden yazdıktan sonra
+  ortalama cümle boyu belirgin düştüyse ve art arda kısa cümleler oluştuysa, bu
+  düzeltme değil bozmadır: 3b'deki karşılaştırmaya dön.
 - **Anlamı kaydırma**: "bazı araştırmacılar" → "araştırmacılar" gibi ölçek değişimi. İddia listesine girer; en iyisi yapmamak.
 
 ## Dosyalar

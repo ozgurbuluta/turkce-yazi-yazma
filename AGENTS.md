@@ -54,6 +54,12 @@ söyle; betik çıktısı uydurulmaz.
 5. Uzun tire (—) ve markdown süsü eklenmez; reel'de hiç markdown olmaz.
    Düzeltme işareti (â, î, û) hiçbir metinde kullanılmaz: zeka, hala, kağıt.
 6. Tür profili ile kullanıcı profili çelişirse kullanıcı kazanır, çelişki söylenir.
+7. Kullanıcıya yazarken metin anlatılır, depo değil: betik adı, dosya yolu, skill
+   adı, kategori kodu, JSON çıktısı yanıtta yer almaz. Bulgu, kuralın adıyla değil
+   cümleyle söylenir.
+8. Betik sayıları işarettir, kural değil. Kararı paragraf verir: bağlamak mı bölmek
+   mi, vuruş mu gevezelik mi; ölçüt paragraf ya da kullanıcının kendi metniyle
+   karşılaştırılarak.
 
 ## Değişiklik yaparken
 
