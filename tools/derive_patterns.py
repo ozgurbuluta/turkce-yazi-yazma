@@ -3,7 +3,7 @@
 
 1. n-gram (1-3) log-odds (Monroe ve ark. 2008, Dirichlet önselli) → LLM tarafında
    aşırı temsil edilen ifadeler, z-skoruna göre sıralı: corpus/aday_kaliplar.tsv.
-   Elle gözden geçirilip skills/turkce-editor/data/ai_kaliplari.tsv'ye eklenir.
+   Elle gözden geçirilip skills/turkce-yazi/data/ai_kaliplari.tsv'ye eklenir.
 2. İnsan ve LLM metinlerinde metrik dağılımları (Ateşman, cümle CV, -maktadır payı,
    bağlaç başı, "bir" oranı...) ve yüzdelikleri: corpus/esikler.json. metrik.py
    içindeki TUR_HEDEF ve uyarı eşikleri buna göre elle güncellenir.
@@ -22,7 +22,7 @@ from collections import Counter
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(KOK / "skills" / "turkce-editor" / "scripts"))
+sys.path.insert(0, str(KOK / "skills" / "turkce-yazi" / "scripts"))
 from trmetin import kelimeler, tr_lower  # noqa: E402
 import metrik  # noqa: E402
 

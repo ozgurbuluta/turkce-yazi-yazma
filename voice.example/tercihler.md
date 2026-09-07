@@ -2,7 +2,7 @@
 
 ## Editör kontrol listesi
 
-Buradaki kurallar `turkce-editor` tarafından her oturumun başında okunur ve genel kurallardan önce gelir.
+Buradaki kurallar editör tarafından her oturumun başında okunur ve genel kurallardan önce gelir.
 
 ### K1 — Meslek adı verme, süreci anlat
 - Kural: "Yazılımcıyım" yerine "kod yazıyorum"; kimliği değil işi yaz.

@@ -1,4 +1,4 @@
-"""kisisel-ses betikleri: ses_ozellikleri.py ve ornek_sec.py (voice.example üzerinde)."""
+"""Ses betikleri: ses_ozellikleri.py ve ornek_sec.py (voice.example üzerinde)."""
 import shutil
 import sys
 import tempfile
@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(KOK / "skills" / "kisisel-ses" / "scripts"))
+sys.path.insert(0, str(KOK / "skills" / "turkce-yazi" / "scripts"))
 import ses_ozellikleri as so  # noqa: E402
 import ornek_sec as os_  # noqa: E402
 

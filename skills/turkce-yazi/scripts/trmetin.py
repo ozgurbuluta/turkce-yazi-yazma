@@ -1,8 +1,6 @@
 """Türkçe metin için ortak yardımcılar: küçük harf, hece, cümle/paragraf/kelime bölme.
 
-Yalnızca standart kütüphane. Aynı dosya kisisel-ses ve turkce-taslak skill'lerinde
-de bulunur; her klasör kendi başına çalışsın diye kopyalanmıştır (tests/ birebir
-aynı olduklarını denetler).
+Yalnızca standart kütüphane.
 """
 import json
 import re

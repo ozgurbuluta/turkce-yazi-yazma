@@ -18,7 +18,7 @@ Sorun şu: bu skill'lerin hiçbiri Türkçe için yapılmadı. Türkçe bir yaz�
 
 Ben de tamamen Türkçe için bir skill yazdım.
 
-Önce kalıp listeleri: 111 Türkçe yapay zeka kalıbı, 71 çeviri kokusu kalıbı; her birinin yanında ne yapılacağı yazıyor (`skills/turkce-editor/data/ai_kaliplari.tsv`: 111 kalıp, 6 kategori; `ceviri_kokusu.tsv`: 71 kalıp, 10 kategori; elle derlendi, MIT).
+Önce kalıp listeleri: 111 Türkçe yapay zeka kalıbı, 71 çeviri kokusu kalıbı; her birinin yanında ne yapılacağı yazıyor (`skills/turkce-yazi/data/ai_kaliplari.tsv`: 111 kalıp, 6 kategori; `ceviri_kokusu.tsv`: 71 kalıp, 10 kategori; elle derlendi, MIT).
 
 Sonra gerçek Türkçe: bir kelimenin doğal Türkçede ne kadar yaygın olduğunu iki sıklık listesinden kontrol ediyor. Konuşma dili için 200 milyonu aşkın kelimelik altyazı derlemi (OpenSubtitles 2018 Türkçe; hermitdave/FrequencyWords; paketteki ilk 30.000 kelimenin toplam sayımı 198 milyon; CC BY-SA 4.0). Yazı dili için 2024 tarihli haber derlemi (Leipzig Corpora Collection, `tur_news_2024_30K`: 30.000 cümle, 27.314 kelime biçimi; CC BY 4.0).
 

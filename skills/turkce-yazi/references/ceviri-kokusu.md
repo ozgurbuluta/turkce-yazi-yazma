@@ -127,7 +127,7 @@ yerine gelmez.
 
 Kaynak İngilizce ise her İngilizce cümleye bir Türkçe cümle düşer, sırası aynı,
 uzunluğu aynı. Türkçe iki cümleyi bire, biri ikiye bölmek ister; bilgi sırası da
-değişir (Türkçe bilineni başa, yeniyi sona koyar). `turkce-taslak` skill'indeki
+değişir (Türkçe bilineni başa, yeniyi sona koyar). yaz kipindeki
 `kaynak_hizala.py` bunu ölçer.
 
 ### Sağa dallanan sıfat yığını

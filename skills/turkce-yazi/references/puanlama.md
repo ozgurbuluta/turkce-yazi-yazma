@@ -64,7 +64,7 @@ arkasında olgu var mı? Aktörsüz cümle (kim yaptı belli değil) kaç tane?
 
 ## 5. Tür uyumu (0 = yanlış tür, 100 = türün kurallarında)
 
-Kaynak: `tur-profilleri` skill'indeki profil; `metrik.py --tur`, `yapi.py --tur`
+Kaynak: `references/turler.md` içindeki profil; `metrik.py --tur`, `yapi.py --tur`
 uyarıları.
 
 | Puan | Görünüm |

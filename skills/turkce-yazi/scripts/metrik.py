@@ -19,7 +19,7 @@ from trmetin import (BAGLACLAR, bin_basina, cumlelere_bol, cv, dosya_oku, hece_s
                      kelimeler, kisaltmalari_yukle, markdown_temizle, ortalama,
                      paragraflara_bol, std, tr_lower, yaz, yuz_basina)
 
-# Tür hedefleri; tur-profilleri skill'indeki profillerle aynı tutulur.
+# Tür hedefleri; references/turler.md ile aynı tutulur.
 # Kalibrasyon: docs/yontem.md — Faz 6'da insan külliyatı yüzdelikleriyle güncellenir.
 TUR_HEDEF = {
     "reel": {"atesman": (70, 95), "cumle_ort": (5, 12), "cv_min": 0.45, "kelime": (60, 220)},

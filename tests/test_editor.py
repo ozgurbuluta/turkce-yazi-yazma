@@ -1,4 +1,4 @@
-"""turkce-editor betikleri için testler. pytest ya da `python3 -m unittest` ile çalışır."""
+"""Editör betikleri için testler. pytest ya da `python3 -m unittest` ile çalışır."""
 import json
 import subprocess
 import sys
@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
-SCRIPTS = KOK / "skills" / "turkce-editor" / "scripts"
+SCRIPTS = KOK / "skills" / "turkce-yazi" / "scripts"
 ORNEK = KOK / "tests" / "ornekler"
 sys.path.insert(0, str(SCRIPTS))
 
@@ -52,13 +52,6 @@ class TrMetinTest(unittest.TestCase):
         self.assertNotIn("**", t)
         self.assertIn("kalın", t)
         self.assertIn("bağ", t)
-
-    def test_kopyalar_ayni(self):
-        asil = (SCRIPTS / "trmetin.py").read_bytes()
-        for skill in ("kisisel-ses", "turkce-taslak"):
-            kopya = KOK / "skills" / skill / "scripts" / "trmetin.py"
-            self.assertTrue(kopya.exists(), kopya)
-            self.assertEqual(kopya.read_bytes(), asil, f"{kopya} asıl dosyadan farklı")
 
 
 class MetrikTest(unittest.TestCase):

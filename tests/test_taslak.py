@@ -1,10 +1,10 @@
-"""turkce-taslak / kaynak_hizala.py testleri."""
+"""kaynak_hizala.py testleri."""
 import sys
 import unittest
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(KOK / "skills" / "turkce-taslak" / "scripts"))
+sys.path.insert(0, str(KOK / "skills" / "turkce-yazi" / "scripts"))
 import kaynak_hizala as kh  # noqa: E402
 
 ORNEK = KOK / "tests" / "ornekler"

@@ -12,7 +12,7 @@ Az örnekle (few-shot) üslup taklidi blog ve forum yazılarında başarısız; 
 sayısını artırmak sınırlı kazanç sağlıyor. Modeller yüzey özelliklerini (uzunluk,
 noktalama) kısmen yakalıyor, örtük üslubu yakalayamıyor.
 
-→ `kisisel-ses`: "benim gibi yaz" + çok örnek yerine **seçim + açık özellik +
+→ Ses adımı: "benim gibi yaz" + çok örnek yerine **seçim + açık özellik +
 karşıt örnek**. `ornek_sec.py` k ≤ 3 ile sınırlı; profil özellikleri sözle
 yazılır.
 
@@ -24,8 +24,8 @@ Açıkça ifade edilmiş yazar özellikleri ve reddedilen/kabul edilen karşıt 
 yalnızca benzer geçmiş metinleri bağlama koymaya (düz RAG) göre yaklaşık %15
 göreli iyileşme veriyor.
 
-→ `kisisel-ses/scripts/ses_ozellikleri.py` (özellikler), `voice/karsit/`
-(karşıtlar), `geri-bildirim-hafizasi` (karşıtları biriktirme).
+→ `scripts/ses_ozellikleri.py` (özellikler), `voice/karsit/`
+(karşıtlar), "hatırla" kipi (karşıtları biriktirme).
 
 ## Yalnızca göreve yarayan geçmiş metni getir
 

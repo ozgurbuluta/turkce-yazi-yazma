@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Sıklık listelerini ve isteğe bağlı külliyatları indirir, kırpılmış sürümleri
-# skills/turkce-editor/data/ altına yazar. Ham indirmeler tools/cache/ altında
+# skills/turkce-yazi/data/ altına yazar. Ham indirmeler tools/cache/ altında
 # kalır (gitignore'da).
 #
 # Kullanım:
@@ -10,7 +10,7 @@ set -euo pipefail
 
 KOK="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 CACHE="$KOK/tools/cache"
-HEDEF="$KOK/skills/turkce-editor/data"
+HEDEF="$KOK/skills/turkce-yazi/data"
 mkdir -p "$CACHE" "$HEDEF"
 
 LEIPZIG_AD="tur_news_2024_30K"

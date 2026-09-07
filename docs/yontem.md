@@ -98,7 +98,7 @@ Kabul edilen adaylar `ai_kaliplari.tsv`'ye yorum satırıyla eklenir:
 
 `esikler.json` içinde insan P90'ı ile LLM P10'u arasında kalan değer, uyarı eşiği
 olur. Örnek: insan CV P10 = 0,42, LLM CV P90 = 0,38 ise uyarı eşiği 0,40. Tür
-bantları (`TUR_HEDEF`, `tur-profilleri/profiller/*.md`, `references/ritim.md`)
+bantları (`TUR_HEDEF`, `references/turler.md`, `references/ritim.md`)
 insan külliyatının tür başına P10-P90 aralığıyla değiştirilir. Üç yer birlikte
 güncellenir; `tests/test_editor.py` bantların tutarlılığını denetlemez, elle
 bakılır.

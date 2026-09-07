@@ -1,4 +1,4 @@
-"""geri-bildirim-hafizasi / karsit_ekle.py testleri (geçici voice/ kopyası üzerinde)."""
+"""karsit_ekle.py testleri (geçici voice/ kopyası üzerinde)."""
 import json
 import shutil
 import subprocess
@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
-BETIK = KOK / "skills" / "geri-bildirim-hafizasi" / "scripts" / "karsit_ekle.py"
+BETIK = KOK / "skills" / "turkce-yazi" / "scripts" / "karsit_ekle.py"
 sys.path.insert(0, str(BETIK.parent))
 import karsit_ekle as ke  # noqa: E402
 

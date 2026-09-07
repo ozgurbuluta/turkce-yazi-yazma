@@ -125,7 +125,7 @@ kendi arşivi varsa onunkiyle). Sayı için değil, kulak için.
 
 ## Tür başına ölçüler
 
-Bunlar yol göstericidir, hedef değil; karar paragrafta verilir. `tur-profilleri`
+Bunlar yol göstericidir, hedef değil; karar paragrafta verilir. `references/turler.md`
 ve `metrik.py --tur` aynı sayıları kullanır.
 
 | Tür | Ortalama cümle (kelime) | Paragraf | Ateşman |

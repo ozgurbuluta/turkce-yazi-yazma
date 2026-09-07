@@ -41,7 +41,7 @@ class Tercihler:
         self.yol = yol
         self.kurallar = []  # dict: id, baslik, alanlar, bolum
         self.on_metin = "# Tercihler\n"
-        self.liste_giris = "\n## Editör kontrol listesi\n\nBuradaki kurallar `turkce-editor` tarafından her oturumun başında okunur ve genel kurallardan önce gelir.\n"
+        self.liste_giris = "\n## Editör kontrol listesi\n\nBuradaki kurallar editör tarafından her oturumun başında okunur ve genel kurallardan önce gelir.\n"
         self.aday_giris = "\n## Aday kurallar\n\nÜç kez görülünce yukarı taşınır.\n"
         if yol.exists():
             self._oku(yol.read_text(encoding="utf-8"))
@@ -156,7 +156,7 @@ def karsit_ekle(yol: Path, kayit: dict) -> int:
 def komut_ekle(a) -> None:
     voice = a.voice
     if not voice.exists():
-        sys.exit(f"{voice} yok. Önce voice.example/ klasörünü voice/ olarak kopyala (kisisel-ses skill'i).")
+        sys.exit(f"{voice} yok. Önce voice.example/ klasörünü voice/ olarak kopyala (references/ses.md).")
     if a.dosya:
         kayitlar = json.loads(a.dosya.read_text(encoding="utf-8"))
         if isinstance(kayitlar, dict):
