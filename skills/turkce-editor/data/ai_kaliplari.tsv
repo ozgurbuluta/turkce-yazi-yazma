@@ -1,0 +1,114 @@
+#kalip	kategori	siddet	ipucu
+# Düzenli ifadeler tr_lower uygulanmış metne uygulanır. siddet: 1 hafif, 2 belirgin, 3 ağır.
+# kategori: gecis (boş bağlaç/geçiş), klise (aşınmış söz), abarti (kof yükseltme), sohbet (chatbot tonu), yapi (iskelet cümlesi), resmiyet (gereksiz resmî ek)
+\bbu bağlamda\b	gecis	2	Sil; cümle bağlaçsız da başlar. Bağlam gerçekten gerekliyse neyin bağlamı olduğunu yaz.
+\bbu doğrultuda\b	gecis	2	Sil ya da somut neden yaz: "bunun için", "o yüzden".
+\bbu noktada\b	gecis	1	Sil; hangi nokta? Gerekirse "burada" ya da somut an.
+\bbu çerçevede\b	gecis	2	Sil; "çerçeve" boş sözcük.
+\bsonuç olarak\b	gecis	2	Sonuç cümlesini yaz, etiketini yazma. Genelde paragrafın tamamı gereksizdir.
+\bözetle(mek gerekirse|yecek olursak)?\b	gecis	2	Özeti sil; okur zaten okudu.
+\bnetice itibar[ıi]yla\b	gecis	2	Sil.
+\bkısacası\b	gecis	1	Kısaysa doğrudan söyle.
+\bgenel olarak\b	gecis	1	Genellemeyi somutla ya da sil.
+\b(ilk|birinci|ikinci|üçüncü|son) olarak\b	gecis	2	Numaralı liste düzyazıya sızmış. Sıra gerekliyse liste yap, değilse akışla bağla.
+\bbunun yanı sıra\b	gecis	1	"Bir de", "ayrıca" ya da hiç.
+\bdaha da önemlisi\b	gecis	2	Önemliyse başa al, etiketleme.
+\bunutulmamalı(dır)?( ki)?\b	gecis	3	Kim unutmasın? Aktörsüz uyarı. Doğrudan söyle.
+\b(şunu )?belirtmek gerekir ki\b	gecis	3	Sil, "ki" yan cümlesini Türkçe sıraya koy.
+\bşunu da (belirtmek|eklemek|söylemek)\b	gecis	2	Sil.
+\bgöz önün(de|e) (bulundur|al)\w*	gecis	2	"düşünürsek", "hesaba katınca" ya da doğrudan koşul.
+\bbir başka deyişle\b|\bdiğer bir deyişle\b	gecis	2	İkinci anlatım gereksizdir; birini seç.
+\bşu bir gerçek ki\b	gecis	3	Sil.
+\bbu (yazıda|makalede|yazımızda|içerikte|videoda|bölümde)\b	yapi	3	Yol gösterme cümlesi. Konuya gir.
+\b(ele alacağız|inceleyeceğiz|değineceğiz|göz atalım|göz atacağız|yakından bakalım|bir bakalım|birlikte bakalım)\b	yapi	2	Ne yapacağını söyleme, yap.
+\bumar(ım|ız) .{0,40}(faydalı|yardımcı) ol	sohbet	3	Chatbot kapanışı. Sil.
+\b(düşünceleriniz|yorumlarınız)(ı|ı da)? (merak|bekliyor|paylaş)	sohbet	2	Etkileşim yemi. Tür reel ise tek bir somut soru olabilir; makalede sil.
+\byorumlarda (belirt|paylaş|yaz)	sohbet	2	Sil.
+\bsizlere\b	sohbet	2	"size" ya da hiç.
+\bsizler(in|i|e)?\b	sohbet	2	"siz".
+\bhaydi\b|\bhadi (başlayalım|bakalım)\b	sohbet	2	Sil.
+\bharika\b	sohbet	2	Neyin harika olduğunu göster, sıfatı at.
+\bheyecan verici\b	abarti	3	Heyecanı okur hissetsin; sıfatla ilan etme.
+\bmuhteşem\b|\bolağanüstü\b	abarti	2	Somut ölçüye çevir.
+\bönemli bir rol oyna\w*	klise	3	Ne yaptığını yaz: "X, Y'yi belirler / yavaşlatır / başlatır".
+\b(kritik|kilit|hayati|büyük) (bir )?(rol|önem|nokta|faktör|unsur)\w*	klise	2	Neden önemli? Sonucu yaz, sıfatı at.
+\bönem taşı\w*	klise	2	"önemli" bile fazla; etkisini yaz.
+\bvazgeçilmez\b	klise	2	Neyin, kimin için? Somutla.
+\bdönüşüm yolculuğu\b	klise	3	Sil; ne değişti, yaz.
+\b(öğrenme|gelişim|değişim|kariyer|keşif|başarı) yolculuğ\w+	klise	2	Yolculuk eğretilemesi aşınmış.
+\bgünümüz dünyasında\b	klise	3	Sil.
+\bmodern dünyada\b	klise	3	Sil.
+\bgünümüzde\b	klise	1	Çoğu zaman gereksiz; sil ya da yılı yaz.
+\bhızla değişen\b	klise	3	Sil.
+\bdijital çağ\w*	klise	3	Sil.
+\bteknoloji çağı\w*	klise	3	Sil.
+\bbilgi çağı\w*	klise	2	Sil.
+\bhayat(ın|ımızın) her alanında\b	klise	3	Alanı söyle.
+\byeni ufuklar\b	klise	3	Sil.
+\bkapı(sını|larını) aral\w*	klise	3	Sil.
+\bışık tut\w*	klise	2	"gösteriyor", "açıklıyor".
+\bköprü kur\w*	klise	2	Ne bağlanıyor? Somutla.
+\bfark yarat\w*	klise	2	Ne farkı? Somutla.
+\bdeğer kat\w*	klise	2	Somutla.
+\bkatkı sağla\w*	klise	2	"yardım etti", "hızlandırdı", "-dı".
+\bfayda sağla\w*	klise	2	"işe yaradı", "-i kolaylaştırdı".
+\bçözüm(ler)? sun\w*	klise	2	Ne çözüyor? Fiille yaz.
+\bfırsat(lar)?ı? sun\w*	klise	2	Somutla.
+\bimkan(ı|lar)? sun\w*	klise	2	"-ebiliyorsun", "-e izin veriyor".
+\bkapsamlı (bir )?	klise	2	Kapsamı söyle ya da sil.
+\bçok yönlü\b	klise	2	Yönleri say ya da sil.
+\bderinlemesine\b	klise	1	Sil.
+\bbenzersiz\b|\beşsiz\b	abarti	2	Neye benzemiyor? Sil.
+\bkusursuz\b	abarti	1	Somutla.
+\bzengin (bir )?(içerik|deneyim|kaynak)\w*	klise	2	Somutla.
+\bön plana çık\w*	klise	2	"göze çarpıyor" ya da neyin öne çıktığını yaz.
+\bgücünü ortaya\b	klise	2	Sil.
+\bpotansiyel(ini|i|ler|ine)?\b	klise	1	Ne olabilir? Olasılığı yaz.
+\bdinamik(ler|leri|lerini)?\b	klise	2	"ilişkiler", "dengeler", "hareket" ya da somut ad.
+\bekosistem\w*	klise	2	Somut ad: "sektör", "çevre", "ortam".
+\bperspektif\w*	klise	2	"bakış", "açı", "gözüyle".
+\bvizyon(u|er|umuz)?\b	klise	1	Somutla.
+\bstratejik\b	klise	1	Sil.
+\binovatif\b|\byenilikçi\b	klise	2	Neyi yeni? Yaz.
+\bsürdürülebilir\b	klise	1	Konu bu değilse sil.
+\bdeneyim(i|ler|ini|ler|leri)?\b	klise	1	Sık tekrar ediyorsa "yaşadığı", "gördüğü", "başına gelen".
+\bsüreç(te|ler|lerin|i|ini|leri)?\b	klise	1	"Süreç" yerine olan biteni yaz: kim ne yaptı.
+\bodaklan\w*	klise	1	"-e bakıyor", "-i önemsiyor", "yalnızca -i yapıyor".
+\bgüçlendir\w*	klise	1	Ne güçlendi? Somutla.
+\bfarkındalık\w*	klise	2	"bilmek", "fark etmek", "görmek".
+\b(kişisel|profesyonel) gelişim\w*	klise	1	Somutla.
+\bkeşfet(mek|meye|meyi|tik)\b	klise	1	"gördük", "öğrendik", "bulduk".
+\bdokunuş\w*	klise	2	Sil.
+\böz(ünde|ü itibariyle)\b	klise	2	Sil; öz neyse onu söyle.
+\btemelde\b|\btemel olarak\b	gecis	1	Sil.
+\bnihayetinde\b	gecis	2	Sil.
+\b(şüphesiz|kuşkusuz|hiç şüphe(siz)? yok ki|tartışmasız)\b	abarti	2	Şüphe yoksa söyleme; varsa kanıt ver.
+\b(inkar edilemez|yadsınamaz)\b	abarti	3	Sil.
+\bkesinlikle\b	abarti	1	Sil.
+\belbette\b	sohbet	1	Sil ya da tonu bilerek seç.
+\baçıkçası\b	sohbet	1	Açık konuşuyorsan işaret koyma.
+\bişte tam da bu\b|\bişte bu (noktada|yüzden|nedenle)\b	sohbet	3	Sil; "bu yüzden" yeter.
+\bgöz ardı edil(memeli|emez|memesi)\w*	klise	3	Kim göz ardı etmesin? Aktör ve sonuç yaz.
+\bihmal edil(memeli|emez)\w*	klise	2	Aktör ve sonuç yaz.
+\bunutmayın(,| ki)?\b	sohbet	2	Sil.
+\bne yazık ki\b	gecis	1	Yazık olduğunu okur anlasın.
+\byalnızca .{0,80}? değil,? aynı zamanda\b|\bsadece .{0,80}? değil,? aynı zamanda\b	yapi	3	"Sadece X değil Y de": İngilizce "not only... but also". İkisini ayrı cümle yap ya da "hem X hem Y".
+\bdeğil,? aynı zamanda\b	yapi	3	Yukarıdaki kalıp. Ayır.
+\bbir yandan .{0,60}? (diğer|öte) yandan\b	yapi	2	Yapay karşıtlık; iki şey gerçekten karşıt mı?
+\bhem .{0,40}? hem de\b	yapi	1	Türkçe'dir; ama üst üste gelirse tekdüze olur.
+\bpeki,? (ya )?	sohbet	1	Reel'de bir kez olabilir, yazıda sil.
+\bşöyle ki\b	gecis	1	Sil, örneği ver.
+\bşu şekilde(dir)?\b|\başağıdaki gibi(dir)?\b	yapi	2	Doğrudan listele ya da anlat.
+\b\w+(makta|mekte)d[ıi]r(lar)?\b	resmiyet	1	"-maktadır" yerine "-yor" ya da "-ır". Sıklığa bak; %20'yi geçince tekdüze.
+\b\w+(mış|miş|muş|müş)t[ıi]r\b	resmiyet	1	"-mıştır": ansiklopedi sesi; "-dı" ya da "-mış".
+\byer almaktadır\b|\bbulunmaktadır\b	resmiyet	2	"var", "-de".
+\bmevcuttur\b	resmiyet	1	"var".
+\baçısından\b	resmiyet	1	Sık tekrarda "için", "-de", "bakınca".
+\bbakımından\b	resmiyet	1	"için", "-ce".
+\bkapsamında\b	resmiyet	1	"içinde", "-de", "-le".
+\bçerçevesinde\b	resmiyet	1	"içinde", "-e göre".
+\bhusus\w*	resmiyet	1	"konu", "nokta", "şey".
+\bdikkate değer\b|\bkayda değer\b	abarti	2	Ne kadar? Sayı ya da karşılaştırma.
+\bönemli ölçüde\b	abarti	2	Ölçüyü yaz.
+\bciddi anlamda\b	abarti	2	Sil ya da ölçü.
+\bbüyük ölçüde\b	abarti	1	Ölçüyü yaz.

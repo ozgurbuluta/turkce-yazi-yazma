@@ -1,0 +1,74 @@
+#kalip	kategori	siddet	ipucu
+# Çeviri kokusu: İngilizceden düşünülüp Türkçe yazılmış cümlenin izleri. tr_lower uygulanmış metne uygulanır.
+# kategori: edilgen (tarafından/edilgen), bir (belirsiz tanımlık kopyası), sahip (have kopyası), zarf (adverbial calque), hafif_fiil (light verb), zamir (açık özne), sira (İngilizce sözdizimi/ki cümlesi), soyut (adlaştırma), sozcuk (sözcük düzeyi kopya), abarti (İngilizce ölçek sözleri)
+\btarafından\b	edilgen	2	Özneyi başa al, fiili etken yap: "Rapor bakanlıkça hazırlandı" → "Bakanlık raporu hazırladı". Aktör önemsizse "tarafından"sız edilgen: "Rapor hazırlandı".
+\b\w+(ıl|il|ul|ül)(mış|miş|muş|müş)t[ıi]r\b	edilgen	1	Edilgen + -mıştır: ansiklopedi çevirisi. Kim yaptı? Etken ve -dı.
+\b\w+(ıl|il|ul|ül)(makta|mekte)d[ıi]r\b	edilgen	1	Edilgen + -maktadır: "yapılmaktadır" → "yapılıyor" ya da etken.
+\b\w+[ae] sahip(tir|ti|ler|)?\b	sahip	2	"-e sahip": İngilizce "have". "Var", "-lı", "-ı olan": "yüksek hıza sahip" → "hızlı".
+\bsahip ol(an|makta|duğu|mak|up|ması|unuz|duk)\w*	sahip	2	"-ı var", "-lı", "-ı olan".
+\bbir şekilde\b	zarf	3	"-ce", "-erek" ya da doğrudan zarf: "etkili bir şekilde" → "etkili biçimde / iyi / işe yarar biçimde"; çoğu zaman zarfı da sil.
+\b\w+ (bir )?biçimde\b	zarf	1	"X biçimde" yerine tek zarf ya da fiili değiştir.
+\bgerçekleştir\w*	hafif_fiil	2	"yaptı", "oldu", "düzenledi": "toplantı gerçekleştirildi" → "toplantı yapıldı / toplandılar".
+\bgerçekleş(ti|miş|mekte|ecek|en)\w*	hafif_fiil	1	"oldu", "yapıldı".
+\b(olanak|imkan|imkân) (sağla|tanı)\w*	hafif_fiil	2	"-ebiliyor", "-e izin veriyor", "-i mümkün kılıyor" da çeviri; "sayesinde -ebiliyoruz".
+\bsağla(n|ndı|mak|yan|r|dı|maktadır|mıştır|yarak)\w*	hafif_fiil	1	Hafif fiil. "X'in artmasını sağladı" → "X'i artırdı".
+\byer al(maktadır|ır|dı|an|ıyor|mış)\w*	hafif_fiil	2	"var", "-de", "arasında".
+\bsöz konusu\b	sozcuk	2	"bu", "adı geçen" ya da doğrudan ad. "söz konusu olduğunda" → "-e gelince".
+\bmümkün kıl\w*	hafif_fiil	2	"-ebilmesini sağlar" da çeviri; "-le X yapılabiliyor", "-den sonra X kolaylaştı".
+\b(demek|söylemek|ifade etmek) mümkün(dür)?\b	sira	2	"denebilir", "diyebiliriz" ya da doğrudan söyle.
+\b(göstermektedir|gösteriyor|belirtmektedir|ifade etmektedir|ortaya koymaktadır|düşünmektedir|inanmaktadır|savunmaktadır|söylemektedir) ki\b	sira	3	"ki" yan cümlesi İngilizce "that": yan cümleyi öne al, fiili sona: "Araştırma gösteriyor ki X" → "Araştırmaya göre X" / "Araştırma X'i gösteriyor".
+\b(araştırmalar|çalışmalar|veriler|uzmanlar) (gösteriyor|göstermektedir|söylüyor|belirtiyor)\b	sira	2	Hangi araştırma? Ad, yıl, sayı. Yoksa cümleyi sil.
+\byapılan (araştırma|çalışma|analiz)\w*	sozcuk	1	"yapılan" gereksiz: "araştırmalar".
+\bönem arz et\w*	hafif_fiil	3	"önemli" bile fazla; sonucu yaz.
+\bteşkil et\w*	hafif_fiil	2	"oluşturur", "-dir".
+\bhale gel\w*	hafif_fiil	1	"-laştı", "oldu": "yaygın hale geldi" → "yaygınlaştı".
+\bhale getir\w*	hafif_fiil	1	"-laştırdı", "yaptı".
+\bihtiyaç duy\w*	hafif_fiil	1	"gerek", "lazım", "-e muhtaç".
+\bihtiyacı var(dır)?\b	hafif_fiil	1	Çoğu zaman "-meli", "gerek".
+\bgerekmektedir\b	sira	1	"gerekir", "gerek", "-meli".
+\bmümkündür\b	sira	1	"-ebilir".
+\bolarak (bilin|adlandırıl|tanımlan|kabul edil|görül|değerlendiril|nitelendiril)\w*	sozcuk	2	"known as / regarded as" kopyası: "X olarak bilinir" → "X denir", "adı X".
+\b\w+ (ile|ile birlikte)\b	sozcuk	1	"-le" eki; "birlikte" çoğu zaman gereksiz.
+\bile birlikte\b	sozcuk	2	"along with": "-le", "ve", "-in yanında".
+\bberaberinde getir\w*	sozcuk	2	"brings with it": "-e yol açtı", "-i de getirdi".
+\bdahil olmak üzere\b	sozcuk	2	"including": "-ler dahil", "aralarında ... da var".
+\b(ile|le|la) ilgili olarak\b	sozcuk	2	"regarding": "konusunda", "hakkında", "-e ilişkin" ya da doğrudan.
+\bhakkında bilgi sahibi\b	sahip	2	"-i bilmek", "-den haberi olmak".
+\baçısından bakıldığında\b	zarf	3	"from the perspective of": "-e göre", "-ce", "için".
+\bbakış açısı(yla|ndan)\b	zarf	1	"gözüyle", "-e göre".
+\bbir parçası (olarak|dır|dir|olan|haline)\w*	sozcuk	2	"part of": "-lerden biri", "-in içinde".
+\bbir bütün olarak\b	zarf	2	"as a whole": "tümüyle", "bütünüyle".
+\bbüyük (bir )?ihtimalle\b	zarf	1	"herhalde", "-dır", "muhtemelen".
+\bnispeten\b|\bgöreceli olarak\b	zarf	1	"relatively": neye göre? Söyle ya da sil.
+\boldukça\b	zarf	1	"quite": ölçü yoksa sil.
+\btüm dünyada\b	abarti	1	"worldwide": nerede? Ülke, bölge.
+\bdünya (çapında|genelinde)\b	abarti	2	Nerede?
+\bgeniş (bir )?yelpaze\w*	abarti	3	"wide range": say.
+\bçok çeşitli\b	abarti	2	"a wide variety of": say.
+\bçeşitli (\w+)\b	abarti	1	"various": hangileri?
+\bbelirli (bir )?(\w+)\b	sozcuk	1	"certain": hangisi? Adını ver ya da "bir" bile fazla.
+\bbir (\w+) olarak\b	bir	2	"as a X": çoğu zaman "bir" düşer: "bir öğretmen olarak" → "öğretmen olarak".
+\bbir (\w+)(dır|dir|dur|dür|tır|tir|tur|tür)\b	bir	1	"is a X": "bir" düşebilir: "İstanbul bir şehirdir" → "İstanbul şehirdir" / "İstanbul, şehir".
+\b(ben|biz|siz|onlar|sen) (\w+(yor|ecek|acak|dı|di|du|dü|tı|ti|tu|tü|mış|miş|muş|müş|ır|ir|ur|ür|ar|er|mal|mel)\w*)\b	zamir	1	Açık özne zamiri: Türkçe fiil kişiyi zaten söyler. Vurgu yoksa sil.
+(?:^|(?<=[.!?…]\s))o,\s	zamir	2	"O, ..." cümle başı: İngilizce "he/she" kopyası. Adı yaz ya da zamiri düşür.
+\bbu,\s	zamir	1	"This, ..." kopyası olabilir; "bu" neyi gösteriyor? Adı yaz.
+\b\w+(ması|mesi|masının|mesinin|masına|mesine|masıyla|mesiyle) \w+(ması|mesi|masının|mesinin|masına|mesine|masıyla|mesiyle)\b	soyut	2	Art arda adlaştırma zinciri: fiile çevir. "artırılmasının sağlanması" → "artırmak".
+\b\w{4,}(laş|leş)(ma|me)(sı|si|nın|nin|na|ne|yla|yle)\b	soyut	1	"-laşması": fiil olarak yaz.
+\b(anlamına gel|şu anlama gel)\w*	sozcuk	1	"means that": "demek", "yani".
+\bbunun sonucunda\b|\bbunun bir sonucu olarak\b	sozcuk	2	"as a result": "böylece", "o yüzden" ya da bağlaçsız.
+\b(ile|le|la) karşılaştırıldığında\b|\bkıyasla\b	zarf	1	"compared to": "-e göre", "-den daha".
+\bmevcut durumda\b|\bhalihazırda\b	zarf	1	"currently": "şimdi", "bugün" ya da sil.
+\bdaha fazla bilgi\b	sozcuk	2	"more information": "ayrıntı", "-i öğrenmek için".
+\bsun(uyor|ar|maktadır|makta|du|muş)\b	hafif_fiil	1	"offers": "veriyor", "var", "-ebiliyorsun".
+\betkileşim\w*	sozcuk	1	"interaction": "konuşma", "alışveriş", "ilişki", somut fiil.
+\bmotivasyon\w*	sozcuk	1	"istek", "heves", "neden".
+\bkonumlan\w*	sozcuk	1	"positioned": "duruyor", "yer alıyor".
+\bhedefle(mek|r|yen|di|niyor)\w*	sozcuk	1	"targets": "-i istiyor", "-e çalışıyor".
+\bşeklinde\b	zarf	1	"in the form of": "-ce", "gibi", "olarak" ya da sil.
+\baynı zamanda\b	sozcuk	1	"also": "de/da" eki.
+\bdurumunda\b	sozcuk	1	"in case of": "-se", "-ince".
+\bsürecinde\b	sozcuk	1	"in the process of": "-ken", "-irken", "-de".
+\bkendine özgü\b	sozcuk	1	"unique to": somutla.
+\bbu sayede\b	sozcuk	1	"thereby": "böylece" ya da bağlaçsız.
+\b(farklı|çeşitli) (\w+)lar(ı|dan|da)?\b	abarti	1	"different/various": hangileri?
+\b\w+ olarak (görüyor|görüyorum|görüyoruz|düşünüyor)\w*	sozcuk	1	"see X as": "-i X sayıyorum", "bence X".
