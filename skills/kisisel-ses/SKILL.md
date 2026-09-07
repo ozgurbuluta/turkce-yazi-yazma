@@ -86,7 +86,7 @@ gerçek metnidir), ama çelişki kullanıcıya söylenir.
 Yeni onaylanan metin eklendiğinde `ses_ozellikleri.py` yeniden çalıştırılır;
 otomatik bölüm yenilenir, "Elle notlar" korunur. `geri-bildirim-hafizasi` skill'i
 her düzeltme oturumundan sonra `voice/karsit/` ve `voice/tercihler.md` dosyalarını
-günceller; onaylanan son hâl `voice/onaylanan/` altına da girer.
+günceller; onaylanan son hal `voice/onaylanan/` altına da girer.
 
 ## Dosyalar
 

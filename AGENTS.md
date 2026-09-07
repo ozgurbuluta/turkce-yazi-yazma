@@ -52,6 +52,7 @@ söyle; betik çıktısı uydurulmaz.
 4. Derlem sorgusu yapmış gibi davranılmaz; emin olunamayan kalıp için TNC/TS
    Corpus sorgusu önerilir (`docs/kaynaklar.md`).
 5. Uzun tire (—) ve markdown süsü eklenmez; reel'de hiç markdown olmaz.
+   Düzeltme işareti (â, î, û) hiçbir metinde kullanılmaz: zeka, hala, kağıt.
 6. Tür profili ile kullanıcı profili çelişirse kullanıcı kazanır, çelişki söylenir.
 
 ## Değişiklik yaparken

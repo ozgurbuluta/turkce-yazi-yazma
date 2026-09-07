@@ -20,7 +20,7 @@ kullanıcının her yorumunu kayda geçirir, kurala çevirir, tekrar edeni yüks
 ## Ne zaman çalışır
 
 1. **Her düzeltme oturumunun sonunda.** `turkce-editor` düzeltmesi bitince ve
-   kullanıcı son hâli onaylayınca — sorulmadan, oturumun son adımı olarak.
+   kullanıcı son hali onaylayınca — sorulmadan, oturumun son adımı olarak.
 2. Kullanıcı bir cümleyi kendisi yeniden yazıp "böyle olacak" dediğinde.
 3. Kullanıcı "bunu hatırla / bir daha yapma / tercihlerime ekle" dediğinde.
 
@@ -35,7 +35,7 @@ alınmaz (`kisisel-ses/references/karsit-ornekler.md`).
 Her yorum için üçlüyü kur:
 - **reddedilen**: hangi cümle/paragraf (olduğu gibi)
 - **yorum**: kullanıcının sözcükleriyle neden; editör önerisiyse "editör:" öneki
-- **son_hal**: kabul edilen hâl
+- **son_hal**: kabul edilen hal
 
 ### 2. Kural damıt
 
@@ -77,13 +77,13 @@ kullanıcı "bir daha 'deneyim' yazma" dediyse kural odur.
 - `karsit_ekle.py liste` — kuralları görülme sayısıyla basar.
 - `karsit_ekle.py terfi K7` — kullanıcı isterse 3 görülmeden önce terfi.
 - `karsit_ekle.py birlestir K7 K12` — iki kural aynıysa birleştir; görülmeler toplanır.
-- Onaylanan son hâl, kullanıcı isterse `voice/onaylanan/<tür>/` altına da girer;
+- Onaylanan son hal, kullanıcı isterse `voice/onaylanan/<tür>/` altına da girer;
   o zaman `kisisel-ses/scripts/ses_ozellikleri.py` yeniden çalıştırılır.
 
 ## Kural yazma ölçütleri
 
 - Bir kural, bir örnek, bir karşı örnek. Örnek reddedilen cümle, karşı örnek son
-  hâldir; ikisi de kullanıcının metninden.
+  haldir; ikisi de kullanıcının metninden.
 - Kural olumsuz olabilir ("X yazma") ama yerine ne yazılacağını da söyler.
 - Kural türe bağlıysa türü taşır: "[reel] soru cümlesi en fazla bir".
 - Genel Türkçe kuralı (`turkce-editor/references/` içinde zaten olan) tekrar

@@ -98,7 +98,7 @@ Puan: 62 → 84 (önce → sonra)
   AI kalıbı      35 → 82  özet paragrafı silindi; "günümüz dünyasında" ×2 → 0
   Ritim          55 → 78  CV 0,26 → 0,52; -maktadır %55 → %6
   Somutluk       60 → 70  "araştırmalar gösteriyor" cümlesi kaynak yokken silindi (iddia listesinde)
-  Tür uyumu      80 → 90  deneme; 179 kelime hâlâ kısa
+  Tür uyumu      80 → 90  deneme; 179 kelime hala kısa
   Ses uyumu      —        voice/ yok
 ```
 

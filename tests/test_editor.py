@@ -28,7 +28,11 @@ class TrMetinTest(unittest.TestCase):
 
     def test_hece(self):
         self.assertEqual(trmetin.hece_sayisi("İstanbul"), 3)
-        self.assertEqual(trmetin.hece_sayisi("kâğıt"), 2)
+        self.assertEqual(trmetin.hece_sayisi("kağıt"), 2)
+        self.assertEqual(trmetin.hece_sayisi("hâlâ"), 2)
+
+    def test_duz(self):
+        self.assertEqual(trmetin.duz("hâlâ zekâ Âdil"), "hala zeka Adil")
         self.assertEqual(trmetin.hece_sayisi("brr"), 1)
 
     def test_cumle_bolme_kisaltma(self):

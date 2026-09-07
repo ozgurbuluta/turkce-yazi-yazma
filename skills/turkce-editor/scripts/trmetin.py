@@ -37,6 +37,14 @@ def tr_lower(s: str) -> str:
     return s.replace("I", "ı").replace("İ", "i").lower()
 
 
+_DUZ = str.maketrans("âîûÂÎÛ", "aiuAİU")
+
+
+def duz(s: str) -> str:
+    """Düzeltme işaretini kaldırır (hâlâ → hala); sözlük aramaları bu biçimle yapılır."""
+    return s.translate(_DUZ)
+
+
 def tr_upper_mi(ch: str) -> bool:
     return bool(BUYUK_RE.match(ch))
 

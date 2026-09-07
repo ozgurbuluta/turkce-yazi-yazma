@@ -11,7 +11,7 @@ Makine taraması `data/ceviri_kokusu.tsv` üzerinden yapılır.
 
 İngilizce edilgen (by-passive) aktörü cümle sonunda söyler; Türkçe edilgen aktörü
 **söylemez**. "Tarafından"lı edilgen Türkçede yalnızca aktörü vurgulamak gerekince
-ve resmî yazıda kullanılır. Anlatı ve deneme dilinde yabancıdır.
+ve resmi yazıda kullanılır. Anlatı ve deneme dilinde yabancıdır.
 
 | Önce | Sonra |
 |---|---|
@@ -84,7 +84,7 @@ olur. Türkçe tek fiille söyler.
 |---|---|
 | Toplantı gerçekleştirildi. | Toplandılar. / Toplantı yapıldı. |
 | Satışların artmasını sağladı. | Satışları artırdı. |
-| Müşterilere geniş imkânlar sunuyor. | Müşteri istediğini seçebiliyor. |
+| Müşterilere geniş imkanlar sunuyor. | Müşteri istediğini seçebiliyor. |
 | Listede yer almaktadır. | Listede. / Listede var. |
 | Değişiklik meydana geldi. | Değişti. |
 | Önem arz etmektedir. | Önemli. |

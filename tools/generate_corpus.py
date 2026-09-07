@@ -32,8 +32,8 @@ Kilim | Halı dokuma | Bakırcılık | Zeytinyağı | Baklava | Kuru fasulye | M
 Fındık | İncir | Kayısı | Çay | Pamuk | Tütün | Buğday | Arıcılık | Zeytin ağacı | Meşe
 Karadeniz | Ege Denizi | Marmara Denizi | Fırat Nehri | Kızılırmak | Sakarya Nehri | Ağrı Dağı | Toros Dağları | Erciyes | Palandöken
 Ankara Kalesi | Galata Kulesi | Ayasofya | Selimiye Camii | Sümela Manastırı | Göbeklitepe | Çatalhöyük | Troya | Aspendos | Perge
-Bisiklet | Satranç | Tavla | Uçurtma | Kâğıt | Matbaa | Pusula | Telgraf | Radyo | Fotoğraf
-Deprem | Yağmur | Kar | Rüzgâr enerjisi | Güneş enerjisi | Su döngüsü | Volkan | Gelgit | Kuzey Işıkları | Gökkuşağı
+Bisiklet | Satranç | Tavla | Uçurtma | Kağıt | Matbaa | Pusula | Telgraf | Radyo | Fotoğraf
+Deprem | Yağmur | Kar | Rüzgar enerjisi | Güneş enerjisi | Su döngüsü | Volkan | Gelgit | Kuzey Işıkları | Gökkuşağı
 Kedi | Köpek | Leylek | Kaplumbağa | Arı | Karınca | Yunus | Kelebek | Baykuş | At
 Uyku | Yürüyüş | Yüzme | Ekmek | Süt | Tuz | Şeker | Bal | Su | Ateş
 Kütüphane | Okul | Pazar yeri | Tren istasyonu | Liman | Köy | Mahalle | Sokak | Bahçe | Balkon

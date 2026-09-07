@@ -35,7 +35,7 @@ anlatır.
 | -dır yüklemi | %4,8 | uyarı > %40 |
 | -dı yüklemi | %49,9 | — |
 
-Haber dili resmî bir kayıttır; deneme ve reel için "bir", bağlaç ve zamir
+Haber dili resmi bir kayıttır; deneme ve reel için "bir", bağlaç ve zamir
 oranları daha yüksek olabilir. Bu yüzden eşikler tabanın 2-4 katına konmuştur.
 Yeniden hesaplamak: `tools/fetch_data.sh --hepsi` sonra
 `python3 tools/derive_patterns.py` (yalnızca metrik kısmı için Leipzig yeter).
@@ -114,5 +114,5 @@ bakılır.
   kuruluysa `--zeyrek` daha iyi sonuç verir ama Claude.ai ortamında yoktur.
 - Leipzig cümleleri karışık sırada olduğundan belge ritmi (paragraf CV, giriş-sonuç)
   için taban vermez.
-- Kalıp listesi Türkçe LLM çıktısının 2025-26 hâlini yansıtır; modeller değişince
+- Kalıp listesi Türkçe LLM çıktısının 2025-26 halini yansıtır; modeller değişince
   liste eskir. Yılda bir Faz 6 tekrarı önerilir.

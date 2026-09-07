@@ -19,7 +19,7 @@ inandırmaz, gösterir.
 | Kaynak | Her sayı ve her "X'e göre" için ad + yıl; dipnot ya da bağlantı |
 
 Leipzig haber külliyatı tabanı: ortalama cümle 13,8, Ateşman 48,8, -maktadır %1.
-Haber dilinden bile daha resmî yazıyorsan sebebi olmalı.
+Haber dilinden bile daha resmi yazıyorsan sebebi olmalı.
 
 ## Hitap ve kişi
 

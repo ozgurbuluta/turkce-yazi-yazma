@@ -1,6 +1,6 @@
 ---
 name: turkce-editor
-description: Türkçe metni inceleyip düzelten editör. Çeviri kokusunu (İngilizceden düşünülmüş cümle), yapay zekâ kalıplarını, düz ritmi ve boş sözü bulur; metni yeniden yazar ya da 0-100 puanlar. Kullanıcı Türkçe bir taslağı "incele", "düzelt", "doğallaştır", "puanla", "editörden geçir" dediğinde ya da bir Türkçe metin verip ne düşündüğünü sorduğunda kullan. (Turkish editor, humanize Turkish text, de-translationese, AI-pattern check.)
+description: Türkçe metni inceleyip düzelten editör. Çeviri kokusunu (İngilizceden düşünülmüş cümle), yapay zeka kalıplarını, düz ritmi ve boş sözü bulur; metni yeniden yazar ya da 0-100 puanlar. Kullanıcı Türkçe bir taslağı "incele", "düzelt", "doğallaştır", "puanla", "editörden geçir" dediğinde ya da bir Türkçe metin verip ne düşündüğünü sorduğunda kullan. (Turkish editor, humanize Turkish text, de-translationese, AI-pattern check.)
 license: MIT
 ---
 
@@ -12,7 +12,7 @@ Bu skill bir metni **daha iyi Türkçe** yapar; daha süslü, daha uzun ya da da
 
 - Kullanıcı Türkçe bir metin verip inceleme, düzeltme, doğallaştırma ya da puan ister.
 - `turkce-taslak` skill'i bir taslak üretti; yayına çıkmadan önce buradan geçer.
-- Kullanıcı "İngilizceden çevrilmiş gibi duruyor", "yapay zekâ yazmış gibi" derse.
+- Kullanıcı "İngilizceden çevrilmiş gibi duruyor", "yapay zeka yazmış gibi" derse.
 
 Metin Türkçe değilse ya da kullanıcı yalnızca çeviri istiyorsa bu skill kullanılmaz.
 
@@ -64,7 +64,7 @@ Betikler **yaklaşıktır**: edilgen sayımı ve ek soyma kaba kurallarla çalı
 
 ### 2. Bulgu raporu
 
-Her bulgu üç parçadır: **cümle** (alıntı) → **neden** (hangi kural; `references/` içindeki adıyla) → **öneri** (yeniden yazılmış hâli). Bulguları önem sırasına koy:
+Her bulgu üç parçadır: **cümle** (alıntı) → **neden** (hangi kural; `references/` içindeki adıyla) → **öneri** (yeniden yazılmış hali). Bulguları önem sırasına koy:
 
 1. Anlam ve iddia sorunları (belirsiz özne, kanıtsız genelleme, aktörsüz cümle)
 2. Çeviri kokusu (`references/ceviri-kokusu.md`)
@@ -108,11 +108,14 @@ Kalan bulguları düzelt. Teslimde dört şey verilir:
 - Argo, küfür, sert yargı: kullanıcının metninde varsa senin işin değildir; olduğu gibi kalır.
 - Markdown: kaynak metinde yoksa eklenmez. Reel'de başlık, madde imi, kalın yazı olmaz.
 - Uzun tire (—) eklenmez. Türkçe düzyazıda virgül, iki nokta ya da ayrı cümle.
+- Düzeltme işareti (â, î, û) kullanılmaz: "zeka", "hala", "kağıt", "imkan", "resmi",
+  "hikaye". Kaynak metinde varsa düz biçime çevrilir; `kalip_tara.py` bunu "yazim"
+  kategorisinde raporlar.
 
 ## Sık düşülen editör hataları
 
 - **Aşırı düzeltme**: her "bir"i silmek, her edilgeni etkene çevirmek. Kural, kalıba değil cümleye bakar. "Bir gün" doğaldır; "bir öğretmen olarak" değildir.
-- **Resmîleştirme**: -yor'u -maktadır yapmak, "şey"i "husus" yapmak. Ters yön.
+- **Resmileştirme**: -yor'u -maktadır yapmak, "şey"i "husus" yapmak. Ters yön.
 - **Süsleme**: eğretileme, üçlü sıralama, retorik soru eklemek. Metni doğallaştırırken AI kalıbı ekliyorsun demektir.
 - **Anlamı kaydırma**: "bazı araştırmacılar" → "araştırmacılar" gibi ölçek değişimi. İddia listesine girer; en iyisi yapmamak.
 

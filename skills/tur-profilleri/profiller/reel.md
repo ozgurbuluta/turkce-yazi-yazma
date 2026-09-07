@@ -21,7 +21,7 @@ Kağıtta iyi duran cümle ağızda takılıyorsa yanlıştır.
 
 ## Hitap ve kişi
 
-- Varsayılan **sen**. "Siz" yalnızca kullanıcı isterse ya da hedef kitle açıkça resmî ise.
+- Varsayılan **sen**. "Siz" yalnızca kullanıcı isterse ya da hedef kitle açıkça resmi ise.
 - "Ben" serbest; reel yazarın sesidir.
 - "Biz" dikkatli: "hepimiz" genellemesi izleyiciyi dışarıda bırakır.
 - Konuşma dili: "-yor", "-dı", ad cümlesi. "-dır", "-maktadır", "-mıştır" yok.

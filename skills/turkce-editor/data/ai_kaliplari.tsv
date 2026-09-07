@@ -1,6 +1,7 @@
 #kalip	kategori	siddet	ipucu
 # Düzenli ifadeler tr_lower uygulanmış metne uygulanır. siddet: 1 hafif, 2 belirgin, 3 ağır.
-# kategori: gecis (boş bağlaç/geçiş), klise (aşınmış söz), abarti (kof yükseltme), sohbet (chatbot tonu), yapi (iskelet cümlesi), resmiyet (gereksiz resmî ek)
+# kategori: gecis (boş bağlaç/geçiş), klise (aşınmış söz), abarti (kof yükseltme), sohbet (chatbot tonu), yapi (iskelet cümlesi), resmiyet (gereksiz resmi ek), yazim (yazım tercihi)
+[âîû]	yazim	1	Düzeltme işareti kullanma: zeka, hala, kağıt, imkan, resmi. Düz yaz.
 \bbu bağlamda\b	gecis	2	Sil; cümle bağlaçsız da başlar. Bağlam gerçekten gerekliyse neyin bağlamı olduğunu yaz.
 \bbu doğrultuda\b	gecis	2	Sil ya da somut neden yaz: "bunun için", "o yüzden".
 \bbu noktada\b	gecis	1	Sil; hangi nokta? Gerekirse "burada" ya da somut an.

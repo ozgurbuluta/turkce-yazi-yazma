@@ -19,7 +19,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from trmetin import cumlelere_bol, kelimeler, kisaltmalari_yukle, markdown_temizle, tr_lower, tr_upper_mi, dosya_oku, yaz  # noqa: E402
+from trmetin import cumlelere_bol, duz, kelimeler, kisaltmalari_yukle, markdown_temizle, tr_lower, tr_upper_mi, dosya_oku, yaz  # noqa: E402
 
 VERI = Path(__file__).resolve().parent.parent / "data"
 
@@ -117,7 +117,7 @@ def denetle(metin: str, kayit: str, zeyrek_kullan=False, nadir_esik=20000, tekra
             if i > 0 and tr_upper_mi(k[0]):
                 ozel_ad[k] += 1
                 continue
-            kl = tr_lower(k)
+            kl = duz(tr_lower(k))
             if len(kl) < 3:
                 continue
             sayac[kl] += 1

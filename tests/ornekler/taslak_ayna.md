@@ -1,6 +1,6 @@
 Gallup tarafından yapılan yeni bir ankete göre uzaktan çalışma kalıcı hale geldi. Mart 2024'te Amerika Birleşik Devletleri genelinde 12.000 çalışanla yapılan araştırma, uzaktan çalışabilen işlerdeki çalışanların %58'inin artık hibrit bir düzende çalıştığını ortaya koydu.
 
-Bu değişimin şehirler için sonuçları var. San Francisco'da şehir merkezindeki ofis boşluk oranı ilk çeyrekte %36'ya ulaştı; bu, kayıtlardaki en yüksek seviye. Kart geçişlerini takip eden Kastle Systems, en büyük on metropolde ofis katılımının hâlâ pandemi öncesi seviyelerin yalnızca %52'si olduğunu bildiriyor.
+Bu değişimin şehirler için sonuçları var. San Francisco'da şehir merkezindeki ofis boşluk oranı ilk çeyrekte %36'ya ulaştı; bu, kayıtlardaki en yüksek seviye. Kart geçişlerini takip eden Kastle Systems, en büyük on metropolde ofis katılımının hala pandemi öncesi seviyelerin yalnızca %52'si olduğunu bildiriyor.
 
 Herkes mutlu değil. Amazon ve JPMorgan, çalışanlarına haftada beş gün ofise dönmelerini emretti. JPMorgan'ın CEO'su Jamie Dimon bir mektupta uzaktan çalışmanın "gençler için ya da çok çalışmak isteyenler için işe yaramadığını" söyledi.
 

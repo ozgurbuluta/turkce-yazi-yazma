@@ -41,9 +41,9 @@ Babam ilk bilgisayarı eve 1994'te getirdi. ...
 ## Ne "onaylanmış" sayılır
 
 Evet:
-- Yazarın yayımladığı metin (son hâli, editör düzeltmesi yazarın onayıyla).
+- Yazarın yayımladığı metin (son hali, editör düzeltmesi yazarın onayıyla).
 - Yazarın "bu benim sesim" dediği yayımlanmamış metin.
-- `geri-bildirim-hafizasi` oturumundan çıkan, yazarın onayladığı son hâl.
+- `geri-bildirim-hafizasi` oturumundan çıkan, yazarın onayladığı son hal.
 
 Hayır:
 - LLM taslağı, düzeltilmemiş.

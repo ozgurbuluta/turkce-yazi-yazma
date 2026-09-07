@@ -1,4 +1,4 @@
-# Türkçe yapay zekâ kalıpları
+# Türkçe yapay zeka kalıpları
 
 Bu liste "yasak sözcükler" listesi değildir. Her kalıp, bir düşünme kısayoludur:
 yazar bir şey söylemek yerine söylemiş gibi yapmıştır. Düzeltme, sözcüğü değiştirmek
@@ -33,7 +33,7 @@ ilişkiyi somut yaz ("bunun üzerine", "aynı hafta", "buna rağmen").
 | kritik / kilit / hayati önem | Su, yaşam için hayati önem taşır. | Susuz üç gün dayanılır. |
 | günümüz dünyasında, modern dünyada, dijital çağda | Günümüz dünyasında bilgiye erişim kolaylaştı. | Telefonda her şey var. |
 | hızla değişen | Hızla değişen iş dünyasında... | (sil; ne değişti, onu yaz) |
-| dönüşüm yolculuğu, öğrenme yolculuğu | Şirket bir dijital dönüşüm yolculuğuna çıktı. | Şirket faturaları kâğıttan e-postaya taşıdı. |
+| dönüşüm yolculuğu, öğrenme yolculuğu | Şirket bir dijital dönüşüm yolculuğuna çıktı. | Şirket faturaları kağıttan e-postaya taşıdı. |
 | kapsamlı, çok yönlü, derinlemesine | Kapsamlı bir analiz yaptık. | Üç yılın satış verisine baktık. |
 | fark yaratmak, değer katmak, katkı sağlamak | Bu proje topluma değer kattı. | Proje mahalleye bir kütüphane bıraktı. |
 | çözüm sunmak, fırsat sunmak | Uygulama kullanıcılara çözümler sunuyor. | Uygulama faturayı ödüyor. |
@@ -48,10 +48,10 @@ ilişkiyi somut yaz ("bunun üzerine", "aynı hafta", "buna rağmen").
 ## 3. Kof yükseltme
 
 Sıfat ve zarfla önem ilan etmek: heyecan verici, benzersiz, eşsiz, muhteşem, kesinlikle,
-şüphesiz, inkâr edilemez, önemli ölçüde, ciddi anlamda, dikkate değer.
+şüphesiz, inkar edilemez, önemli ölçüde, ciddi anlamda, dikkate değer.
 
 - "Sonuçlar oldukça dikkate değer." → "Satış üç ayda ikiye katlandı."
-- "Bu inkâr edilemez bir gerçek." → (sil; gerçekse söylemeye gerek yok)
+- "Bu inkar edilemez bir gerçek." → (sil; gerçekse söylemeye gerek yok)
 - "Kesinlikle denemelisiniz." → "Deneyin."
 
 **Kural**: yükseltici sıfatı sil. Cümle zayıfladıysa sorun sıfatta değil, kanıtsızlıkta.
@@ -126,6 +126,13 @@ uyarı.
 
 - "Şirket yeni ürününü piyasaya sürmüştür." → "Şirket yeni ürünü çıkardı."
 - "Bu konuda çeşitli görüşler bulunmaktadır." → "Bu konuda herkes başka bir şey söylüyor."
+
+## 8. Yazım tercihi: düzeltme işareti yok
+
+Bu depo düz yazımı benimser: "zeka", "hala", "kağıt", "imkan", "resmi", "hikaye",
+"kar". Şapkalı harf (â, î, û) sözlükte kalır, metne girmez. Kaynak metinde varsa
+düzeltmede düz biçime çevrilir. Sebep: gündelik Türkçe böyle yazılıyor; şapkalı
+biçim metni olduğundan resmi gösteriyor ve tutarsız kullanılıyor.
 
 ## Kalıp bulunca ne yapılır
 

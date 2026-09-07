@@ -38,10 +38,10 @@ genel kurallardan önce gelir.
 
 | Alan | Zorunlu | Not |
 |---|---|---|
-| `### K<n> — <başlık>` | evet | `n` artan; başlık kuralın kısa hâli |
+| `### K<n> — <başlık>` | evet | `n` artan; başlık kuralın kısa hali |
 | Kural | evet | Tek cümle, yerine ne yazılacağı dahil |
 | Örnek | evet | Reddedilen cümle (kullanıcının metninden) |
-| Karşı örnek | evet | Son hâl |
+| Karşı örnek | evet | Son hal |
 | Kalıp | hayır | Python regex, `tr_lower` uygulanmış metne; boşsa TSV'ye girmez |
 | Tür | hayır | `hepsi` ya da tür adı |
 | Görülme | evet | Sayı ve tarih listesi; betik günceller |

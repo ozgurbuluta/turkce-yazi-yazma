@@ -12,7 +12,8 @@ HARF = re.compile(r"^[a-zçğıöşüâîû']+$")
 
 
 def tr_lower(s: str) -> str:
-    return s.replace("I", "ı").replace("İ", "i").lower()
+    # Düzeltme işaretli biçimler (hâlâ, zekâ) düz biçime katlanır; sayımlar birleşir.
+    return s.replace("I", "ı").replace("İ", "i").lower().translate(str.maketrans("âîû", "aiu"))
 
 
 def yaz(sayac: Counter, hedef: Path, ust: int, baslik: str) -> None:

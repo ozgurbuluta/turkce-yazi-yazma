@@ -59,6 +59,7 @@ def incele(ham: str, tur=None) -> dict:
     uzun_tire = ham.count("—")
     kisa_tire = ham.count("–")
     kivrik_tirnak = sum(ham.count(c) for c in "“”‘’")
+    duzeltme_isareti = sum(ham.count(c) for c in "âîûÂÎÛ")
     tuhaf = {ad: ham.count(ch) for ch, ad in TUHAF.items() if ham.count(ch)}
     kontrol = [f"U+{ord(ch):04X} {unicodedata.name(ch, '?')}" for ch in set(ham) if unicodedata.category(ch) in ("Cf", "Co") and ch not in TUHAF]
 
@@ -91,7 +92,7 @@ def incele(ham: str, tur=None) -> dict:
         "paragraf": len(paragraflar),
         "biçim": {
             "baslik": len(basliklar), "madde": len(maddeler), "kalin": kalin, "emoji": emoji,
-            "uzun_tire": uzun_tire, "kisa_tire": kisa_tire, "kivrik_tirnak": kivrik_tirnak,
+            "uzun_tire": uzun_tire, "kisa_tire": kisa_tire, "kivrik_tirnak": kivrik_tirnak, "duzeltme_isareti": duzeltme_isareti,
             "tuhaf_unicode": tuhaf, "diger_gorunmez": kontrol,
             "madde_yuz": round(100 * len(maddeler) / max(1, len([x for x in satirlar if x.strip()])), 1),
         },
@@ -134,6 +135,8 @@ def incele(ham: str, tur=None) -> dict:
         u.append(f"Uzun tire (—) {uzun_tire} kez: Türkçe düzyazıda seyrek. Virgül, iki nokta ya da ayrı cümle.")
     if emoji:
         u.append(f"{emoji} emoji.")
+    if duzeltme_isareti:
+        u.append(f"Düzeltme işareti (â/î/û) {duzeltme_isareti} kez: düz yaz (zeka, hala, kağıt).")
     if tuhaf or kontrol:
         u.append("Görünmez/tuhaf karakter var: " + ", ".join(list(tuhaf) + kontrol))
     if kalin >= 3 and tur in (None, "deneme", "makale"):
@@ -145,7 +148,7 @@ def ozet(s: dict) -> str:
     b = s["biçim"]
     L = [
         f"Yapı: {s['kelime']} kelime, {s['cumle']} cümle, {s['paragraf']} paragraf",
-        f"Biçim: başlık {b['baslik']}, madde {b['madde']} (%{b['madde_yuz']} satır), kalın {b['kalin']}, emoji {b['emoji']}, uzun tire {b['uzun_tire']}, kısa tire {b['kisa_tire']}, kıvrık tırnak {b['kivrik_tirnak']}",
+        f"Biçim: başlık {b['baslik']}, madde {b['madde']} (%{b['madde_yuz']} satır), kalın {b['kalin']}, emoji {b['emoji']}, uzun tire {b['uzun_tire']}, kısa tire {b['kisa_tire']}, kıvrık tırnak {b['kivrik_tirnak']}, düzeltme işareti {b['duzeltme_isareti']}",
         f"Üçlü liste: {s['uclu_liste']['sayi']} (%{s['uclu_liste']['yuz_cumle']} cümle); 'değil' karşıtlığı: {s['degil_karsitlik']['sayi']}; soru: {s['soru']['sayi']} (paragraf başı {s['soru']['paragraf_basi']})",
         f"Açılış: art arda aynı sözcük {s['acilis']['ardisik_ayni_kelime']}; en sık cümle başı " + ", ".join(f"{k} ×{n}" for k, n in s["acilis"]["en_sik_cumle_basi"]),
         f"Giriş-sonuç benzerliği: {s['giris_sonuc_jaccard']}; özet kapanışı: {'var' if s['ozet_kapanisi'] else 'yok'}",

@@ -10,7 +10,7 @@
 \b\w+ (bir )?biçimde\b	zarf	1	"X biçimde" yerine tek zarf ya da fiili değiştir.
 \bgerçekleştir\w*	hafif_fiil	2	"yaptı", "oldu", "düzenledi": "toplantı gerçekleştirildi" → "toplantı yapıldı / toplandılar".
 \bgerçekleş(ti|miş|mekte|ecek|en)\w*	hafif_fiil	1	"oldu", "yapıldı".
-\b(olanak|imkan|imkân) (sağla|tanı)\w*	hafif_fiil	2	"-ebiliyor", "-e izin veriyor", "-i mümkün kılıyor" da çeviri; "sayesinde -ebiliyoruz".
+\b(olanak|imkan) (sağla|tanı)\w*	hafif_fiil	2	"-ebiliyor", "-e izin veriyor", "-i mümkün kılıyor" da çeviri; "sayesinde -ebiliyoruz".
 \bsağla(n|ndı|mak|yan|r|dı|maktadır|mıştır|yarak)\w*	hafif_fiil	1	Hafif fiil. "X'in artmasını sağladı" → "X'i artırdı".
 \byer al(maktadır|ır|dı|an|ıyor|mış)\w*	hafif_fiil	2	"var", "-de", "arasında".
 \bsöz konusu\b	sozcuk	2	"bu", "adı geçen" ya da doğrudan ad. "söz konusu olduğunda" → "-e gelince".

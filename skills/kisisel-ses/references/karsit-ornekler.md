@@ -1,7 +1,7 @@
 # Karşıt örnekler
 
 Bir metnin nasıl yazıldığını göstermek yetmez; nasıl yazılmadığını da göstermek
-gerekir. Karşıt çift, aynı yerde reddedilen ve kabul edilen iki hâli yan yana koyar
+gerekir. Karşıt çift, aynı yerde reddedilen ve kabul edilen iki hali yan yana koyar
 ve nedenini söyler. Araştırma (Yazan, Verberne, Situmeang 2025; `docs/arastirma.md`)
 bu çiftlerin, yalnızca olumlu örnek vermeye göre üslup uyumunu ölçülebilir biçimde
 artırdığını gösteriyor.
@@ -23,7 +23,7 @@ Alanlar:
 | `tür` | evet | reel / deneme / makale / blog |
 | `reddedilen` | evet | Reddedilen cümle ya da paragraf, olduğu gibi |
 | `yorum` | evet | Yazarın ya da editörün nedeni, yazarın sözcükleriyle |
-| `son_hal` | evet | Kabul edilen hâl |
+| `son_hal` | evet | Kabul edilen hal |
 | `kural_adayı` | hayır | Tek cümlelik genelleme; `tercihler.md`'ye gider |
 | `kalip` | hayır | Reddedileni yakalayan regex; `tercihler.tsv`'ye gider |
 

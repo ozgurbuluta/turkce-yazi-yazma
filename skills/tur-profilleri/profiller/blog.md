@@ -29,7 +29,7 @@ kürsü değil.
 
 ## Açılış hareketleri
 
-1. **Okurun sorunu, okurun diliyle**: "Gece üçte hâlâ uyuyamıyorsan telefon değil, kafein."
+1. **Okurun sorunu, okurun diliyle**: "Gece üçte hala uyuyamıyorsan telefon değil, kafein."
 2. **Kendi başarısızlığın**: "Üç yıl yanlış yaptım."
 3. **Somut sonuç önden**: "Şu değişiklik faturayı yarıya indirdi."
 4. **Karşı iddia**: "Sabah rutini işe yaramıyor, en azından bende."

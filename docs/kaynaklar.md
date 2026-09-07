@@ -2,7 +2,7 @@
 
 | Kaynak | Ne | Lisans | Depoda | Nasıl kullanılır |
 |---|---|---|---|---|
-| [Leipzig Corpora Collection](https://wortschatz.uni-leipzig.de/en/download/Turkish) — `tur_news_2024_30K` | Haber cümleleri ve sözcük sıklığı | CC BY 4.0 | Sözcük listesi kırpılmış hâlde `skills/turkce-editor/data/siklik_yazili.tsv`; cümle dosyası değil | `tools/fetch_data.sh` indirir; atıf: Goldhahn, Eckart, Quasthoff, LREC 2012 |
+| [Leipzig Corpora Collection](https://wortschatz.uni-leipzig.de/en/download/Turkish) — `tur_news_2024_30K` | Haber cümleleri ve sözcük sıklığı | CC BY 4.0 | Sözcük listesi kırpılmış halde `skills/turkce-editor/data/siklik_yazili.tsv`; cümle dosyası değil | `tools/fetch_data.sh` indirir; atıf: Goldhahn, Eckart, Quasthoff, LREC 2012 |
 | Leipzig `tur_wikipedia_2021_30K`, `tur_web_2019_30K` | Vikipedi ve web cümleleri | CC BY 4.0 | Hayır | `tools/fetch_data.sh --hepsi` ile `corpus/leipzig/`; kalibrasyon |
 | [hermitdave/FrequencyWords](https://github.com/hermitdave/FrequencyWords) — `2018/tr/tr_50k.txt` | OpenSubtitles konuşma dili sıklığı | CC BY-SA 4.0 | Kırpılmış: `siklik_konusma.tsv` (aynı lisansla) | `siklik.py --konusma` |
 | Türkçe Vikipedi | Madde metinleri | CC BY-SA 4.0 | Hayır | Faz 6 insan külliyatı ve konu başlıkları; dökümden örnek alınır, depoya girmez |

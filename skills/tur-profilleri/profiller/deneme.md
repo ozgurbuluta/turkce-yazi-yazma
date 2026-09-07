@@ -54,7 +54,7 @@ boyunca", soru ("Hiç düşündünüz mü?"), sözlük/alıntı ile başlamak.
 
 1. **Açılışa dönüş, anlam değişmiş**: ilk sahne son sahnede başka görünür.
 2. **Açık soru**: cevap yok, ama soru artık daha keskin.
-3. **Küçük eylem**: "Tableti aldım." / "Kutuyu hâlâ saklıyorum."
+3. **Küçük eylem**: "Tableti aldım." / "Kutuyu hala saklıyorum."
 4. **Kabul**: "Bilmiyorum; babam da bilmiyordu."
 
 Yasak kapanışlar: özet, ders ("Bu bize gösteriyor ki"), genelleme ("Hepimiz..."),
