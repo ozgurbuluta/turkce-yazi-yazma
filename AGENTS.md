@@ -1,49 +1,33 @@
 # AGENTS.md
 
-Bu depo Türkçe yazı için beş skill taşır. Ajan olarak buradaysan görevine göre
-tek bir skill'den başla; skill seni gerekirse diğerlerine yönlendirir.
-
-## Skill kataloğu
-
-| Görev | Başlangıç skill'i | Sonra |
-|---|---|---|
-| Türkçe metni incele / düzelt / puanla | `skills/turkce-editor/SKILL.md` | `tur-profilleri` (tür belliyse), `kisisel-ses` (voice/ varsa), bitince `geri-bildirim-hafizasi` |
-| Notlardan ya da İngilizce kaynaktan Türkçe taslak | `skills/turkce-taslak/SKILL.md` | `tur-profilleri`, `kisisel-ses`, sonra `turkce-editor` |
-| "Reel / deneme / makale / blog kurallarına uy" | `skills/tur-profilleri/SKILL.md` + `profiller/<tür>.md` | — |
-| "Benim sesimle yaz", ses arşivi kur | `skills/kisisel-ses/SKILL.md` | — |
-| "Bunu hatırla / bir daha yapma" | `skills/geri-bildirim-hafizasi/SKILL.md` | — |
-
-Otomatik tetiklenen (kullanıcı ad vermeden) skill'ler: `turkce-editor`,
-`turkce-taslak`. Diğer üçü açık istekle ya da bu ikisinin yönlendirmesiyle açılır.
+Bu depo tek bir skill taşır: `skills/turkce-yazi/`. Türkçe metin düzeltir, notlardan
+ya da İngilizce kaynaktan Türkçe taslak yazar, tür kurallarını ve yazarın kendi
+sesini uygular. Ajan olarak buradaysan `skills/turkce-yazi/SKILL.md` ile başla;
+gerisini o yönlendirir.
 
 ## Düzen
 
 ```
-skills/<ad>/SKILL.md        # frontmatter (name, description) + Türkçe yönerge
-skills/<ad>/references/     # kural katalogları; SKILL.md gerektiğinde işaret eder
-skills/<ad>/scripts/        # stdlib Python; hepsi --json alır, --help açıklar
-skills/<ad>/data/           # yalnızca turkce-editor: TSV kalıp ve sıklık listeleri
-voice/                      # kişisel arşiv; gitignore; şablon voice.example/
-tools/                      # veri indirme ve kalibrasyon; skill'ler bunlara bağımlı değil
-tests/                      # python3 -m unittest discover tests (pytest de çalışır)
-docs/                       # yontem.md (kalibrasyon), kaynaklar.md (lisans), arastirma.md
+skills/turkce-yazi/SKILL.md     # tek giriş: düzelt, incele, puanla, yaz, hatırla
+skills/turkce-yazi/references/  # kalıplar, çeviri kokusu, ritim, puanlama, türler, bilgi kartı, ses
+skills/turkce-yazi/scripts/     # stdlib Python; hepsi --json ve --help alır
+skills/turkce-yazi/data/        # kalıp TSV'leri ve sıklık listeleri (lisanslar data/LICENSES.md)
+voice.example/                  # kişisel arşiv şablonu; gerçek arşiv voice/ (gitignore)
+tools/                          # veri indirme, kalibrasyon, paketleme (skill bunlara bağımlı değil)
+tests/                          # python3 -m unittest discover tests
+docs/                           # yontem.md, kaynaklar.md, arastirma.md
+dist/                           # tools/paketle.py üretir; gitignore
 ```
-
-Her skill klasörü kendi başına çalışır (Claude.ai'ye tek klasör zip'lenebilir).
-`trmetin.py` üç skill'de birebir kopyadır; `tests/test_editor.py` aynılığı
-denetler. Birini değiştirirsen üçünü değiştir:
-`skills/{turkce-editor,kisisel-ses,turkce-taslak}/scripts/trmetin.py`.
 
 ## Betikleri çalıştırma
 
-Skill klasöründen göreli yol: `python3 scripts/metrik.py metin.md --tur deneme`.
-Depo kökünden: `python3 skills/turkce-editor/scripts/metrik.py ...`. Claude.ai'de
-`/mnt/skills/<ad>/scripts/...`. Betikler stdin de okur (`-`).
+Skill klasöründen: `python3 scripts/metrik.py metin.md --tur deneme`. Depo
+kökünden: `python3 skills/turkce-yazi/scripts/metrik.py ...`. Claude.ai'de
+`/mnt/skills/turkce-yazi/scripts/...`. Betikler stdin de okur (`-`). Betik
+çalıştıramıyorsan `references/` listelerini elle uygula ve bunu söyle; çıktı
+uydurulmaz.
 
-Betik çalıştıramıyorsan `references/` içindeki listeleri elle uygula ve raporda
-söyle; betik çıktısı uydurulmaz.
-
-## Kurallar (tüm skill'ler)
+## Kurallar
 
 1. Kaynakta olmayan olgu, sayı, ad, iddia yazılmaz; kaldırılan iddia listelenir.
 2. Skill metni Türkçedir; kullanıcıya Türkçe yanıt verilir (kullanıcı İngilizce
@@ -51,12 +35,12 @@ söyle; betik çıktısı uydurulmaz.
 3. `voice/` içeriği hiçbir çıktıya, commit'e, özet dosyasına kopyalanmaz.
 4. Derlem sorgusu yapmış gibi davranılmaz; emin olunamayan kalıp için TNC/TS
    Corpus sorgusu önerilir (`docs/kaynaklar.md`).
-5. Uzun tire (—) ve markdown süsü eklenmez; reel'de hiç markdown olmaz.
-   Düzeltme işareti (â, î, û) hiçbir metinde kullanılmaz: zeka, hala, kağıt.
+5. Uzun tire (—) ve markdown süsü eklenmez; reel'de hiç markdown olmaz. Düzeltme
+   işareti (â, î, û) hiçbir metinde kullanılmaz: zeka, hala, kağıt.
 6. Tür profili ile kullanıcı profili çelişirse kullanıcı kazanır, çelişki söylenir.
 7. Kullanıcıya yazarken metin anlatılır, depo değil: betik adı, dosya yolu, skill
-   adı, kategori kodu, JSON çıktısı yanıtta yer almaz. Bulgu, kuralın adıyla değil
-   cümleyle söylenir.
+   adı, kategori kodu, JSON yanıtta yer almaz. Bulgu kuralın adıyla değil cümleyle
+   söylenir.
 8. Betik sayıları işarettir, kural değil. Kararı paragraf verir: bağlamak mı bölmek
    mi, vuruş mu gevezelik mi; ölçüt paragraf ya da kullanıcının kendi metniyle
    karşılaştırılarak.
@@ -66,6 +50,7 @@ söyle; betik çıktısı uydurulmaz.
 - Kalıp eklerken `data/*.tsv` sütun düzenine uy; `tests/ornekler/dogal.md` üzerinde
   yanlış pozitif verme (`kalip_tara.py` puanı ≤ 20 kalmalı).
 - Eşik değiştirirken üç yeri birlikte güncelle: `metrik.py TUR_HEDEF`,
-  `tur-profilleri/profiller/*.md`, `turkce-editor/references/ritim.md`.
-- Yeni tür eklerken: profil → `TUR_HEDEF` → `voice.example/onaylanan/<tür>/`.
+  `references/turler.md`, `references/ritim.md`.
+- SKILL.md değişince `python3 tools/paketle.py` ile paketleri yeniden üret ve
+  GitHub Release'i güncelle.
 - `python3 -m unittest discover tests` yeşil kalmalı.
