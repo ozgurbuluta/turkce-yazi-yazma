@@ -1,0 +1,17 @@
+# Kişisel ses arşivi — asla paylaşılmaz
+voice/
+
+# Üretilmiş LLM külliyatı ve ham indirmeler
+corpus/
+tools/cache/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Editör / işletim sistemi
+.DS_Store
+.idea/
+.vscode/
