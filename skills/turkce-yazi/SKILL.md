@@ -1,6 +1,6 @@
 ---
 name: turkce-yazi
-description: Türkçe yazı editörü ve yazarı. Verilen Türkçe metni çeviri kokusundan (İngilizceden düşünülmüş cümle), yapay zeka kalıplarından, kesik ya da tekdüze ritimden ve boş sözden arındırıp yeniden yazar; notlardan ya da İngilizce kaynaktan kopyalamadan Türkçe taslak yazar; reel, deneme, makale, blog kurallarını uygular; varsa yazarın kendi ses arşivini ve tercihlerini kullanır. Kullanıcı Türkçe bir metin verip "düzelt", "incele", "doğallaştır", "puanla" dediğinde, "şu notlardan reel/deneme/makale/blog yaz", "bu İngilizce yazıdan Türkçe yazı çıkar" dediğinde, ya da "benim sesimle yaz", "bunu hatırla" dediğinde kullan. (Turkish writing editor: humanize Turkish text, de-translationese, AI-pattern check, draft from notes or English source, genre rules, personal voice.)
+description: Türkçe yazı editörü ve yazarı. Verilen Türkçe metni çeviri kokusundan (İngilizceden düşünülmüş cümle), yapay zeka kalıplarından, kesik ya da tekdüze ritimden ve boş sözden arındırıp yeniden yazar; notlardan ya da İngilizce kaynaktan kopyalamadan Türkçe taslak yazar; reel, deneme, makale, blog kurallarını uygular; varsa yazarın kendi ses arşivini ve tercihlerini kullanır. Kullanıcı Türkçe bir metin verip "düzelt", "incele", "doğallaştır", "puanla" dediğinde, "şu notlardan reel/deneme/makale/blog yaz", "bu İngilizce yazıdan Türkçe yazı çıkar" dediğinde, ya da "benim sesimle yaz", "ses arşivimi kur", "bunu hatırla" dediğinde kullan. (Turkish writing editor: humanize Turkish text, de-translationese, AI-pattern check, draft from notes or English source, genre rules, personal voice.)
 license: MIT
 ---
 
@@ -195,7 +195,15 @@ dediğinde:
 4. Onaylanan son hal kullanıcı isterse `voice/onaylanan/<tür>/` altına da girer;
    sonra `python3 scripts/ses_ozellikleri.py --arsiv voice/onaylanan --cikti voice/profil.md`.
 
-Ses arşivinin yapısı, frontmatter ve tercihler dosyasının biçimi:
+**"Ses arşivimi kur"** dendiğinde: `voice/` yoksa `voice.example/` kopyalanır ve
+kullanıcıdan onayladığı en az beş yazı istenir (`voice/onaylanan/<tür>/` altına,
+başında tür ve tarih). Yazılar geldiğinde
+`python3 scripts/ses_ozellikleri.py --arsiv voice/onaylanan --cikti voice/profil.md`
+çalıştırılır ve profil kullanıcıya düz Türkçeyle özetlenir: cümle boyu, sevdiği
+bağlaçlar, hitap, açılış alışkanlıkları. Dosyaya yazılamayan ortamda aynı özet
+bastırılır, kullanıcı Projenin talimatlarına yapıştırır.
+
+Ses arşivinin yapısı, dosya başlığı ve tercihler dosyasının biçimi:
 `references/ses.md`.
 
 ## Kesin kurallar
