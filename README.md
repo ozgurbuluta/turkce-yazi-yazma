@@ -30,22 +30,6 @@ iyidir:
 Bir de yazım tercihi: düzeltme işareti (â, î, û) kullanılmaz. "Zeka", "hala",
 "kağıt", "imkan".
 
-### Önce / sonra
-
-Skill'in bulup değiştirdiği şeyin tipik hali:
-
-> **Önce:** Günümüz dünyasında yapay zeka, hayatımızın her alanında önemli bir rol
-> oynamaktadır. Araştırmalar göstermektedir ki, kişiselleştirilmiş öğrenme
-> deneyimleri öğrenci başarısını önemli ölçüde artırmaktadır. Sonuç olarak, bu
-> teknolojinin doğru kullanılması kritik bir rol oynayacaktır.
->
-> **Sonra:** Yapay zeka sınıfa girdi. Hangi sınıfa, ne yaptı, kim ölçtü: bu üç soru
-> cevaplanmadan "başarıyı artırıyor" demek boş. Elimde tek bir ölçüm yok; o yüzden
-> bu paragrafı siliyorum, kanıt bulunca yazacağım.
-
-Editör ikinci metni tek başına yazmaz; ilkindeki her boş iddiayı gösterir, kanıtsız
-olanı sildiğini söyler, kalanı Türkçe kurar. Kaynakta olmayan hiçbir sayı ya da ad
-eklenmez.
 
 ## Beş skill
 
