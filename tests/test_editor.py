@@ -87,6 +87,13 @@ class MetrikTest(unittest.TestCase):
         s = calistir("metrik.py", str(ORNEK / "dogal.md"), "--tur", "reel")
         self.assertEqual(s["tur"], "reel")
 
+    def test_parcali(self):
+        p = calistir("metrik.py", str(ORNEK / "parcali.md"))
+        d = calistir("metrik.py", str(ORNEK / "dogal.md"))
+        self.assertTrue(any("parçalanma" in u for u in p["uyarilar"]))
+        self.assertFalse(any("parçalanma" in u for u in d["uyarilar"]))
+        self.assertLess(p["cumle_uzunlugu"]["ortalama"], d["cumle_uzunlugu"]["ortalama"])
+
     def test_bos(self):
         self.assertIn("hata", metrik.hesapla(""))
 
@@ -170,6 +177,15 @@ class YapiTest(unittest.TestCase):
         self.assertTrue(kotu["ozet_kapanisi"])
         self.assertFalse(iyi["ozet_kapanisi"])
         self.assertEqual(iyi["uyarilar"], [])
+
+    def test_kisa_dizi(self):
+        p = calistir("yapi.py", str(ORNEK / "parcali.md"))
+        d = calistir("yapi.py", str(ORNEK / "dogal.md"))
+        self.assertGreaterEqual(p["kisa_diziler"]["sayi"], 1)
+        self.assertTrue(any("kısa cümle dizisi" in u for u in p["uyarilar"]))
+        self.assertEqual(d["kisa_diziler"]["sayi"], 0)
+        r = yapi.incele("Kısa. Çok kısa. Yine kısa. Bir daha.", "reel")
+        self.assertFalse(any("kısa cümle dizisi" in u for u in r["uyarilar"]))
 
     def test_tuhaf_unicode(self):
         s = yapi.incele("Bir metin​ burada — ve — orada — yine.")

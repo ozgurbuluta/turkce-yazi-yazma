@@ -11,8 +11,8 @@ değil, dürüstlükle ikna eder.
 | Ölçü | Hedef |
 |---|---|
 | Kelime | 500-1500 |
-| Ortalama cümle | 9-18 kelime |
-| Ritim (CV) | ≥ 0,50; en az üç adet ≤ 4 kelimelik cümle |
+| Ortalama cümle | 10-18 kelime |
+| Ritim | Cümleler ulaçla bağlı, arada seyrek vuruş; ne metronom ne parçalı |
 | Ateşman | 45-75 |
 | Paragraf | 2-8 cümle; en az bir tek cümlelik paragraf |
 | Yüklem | Hiçbir ek %40'ı geçmez; -maktadır ≤ %5 |
@@ -43,7 +43,8 @@ boyunca", soru ("Hiç düşündünüz mü?"), sözlük/alıntı ile başlamak.
   sınayan ikinci olay.
 - Her paragraf bir adım atar. Bir önceki paragrafı özetleyen cümle yoktur.
 - Düşünce cümleleri kısa, olay cümleleri uzun olabilir; tersi de. Ritim ikisinin
-  değişiminden çıkar.
+  değişiminden çıkar. Art arda kısa cümle dizisi denemeyi reklam metnine çevirir;
+  ilişkili cümleler "-ip, -ince, -diği için" ile bağlanır (`turkce-editor/references/ritim.md`).
 - Kanıt: olay, ayrıntı, diyalog. İstatistik olabilir ama bir tane; kaynak adı
   metnin içinde, dipnot yok.
 - Çelişki serbest: yazar fikrini değiştirebilir, "bilmiyorum" diyebilir. Deneme
@@ -75,9 +76,9 @@ Yasak kapanışlar: özet, ders ("Bu bize gösteriyor ki"), genelleme ("Hepimiz.
 
 - [ ] "Ben" var; olay var; okur beni görüyor
 - [ ] Açılış bir sahne, gözlem ya da itiraf; tanım değil
-- [ ] En az bir tek cümlelik paragraf, en az üç dört kelimelik cümle
+- [ ] Kısa cümleler bir şey vuruyor; art arda kısa cümle dizisi yok
 - [ ] Hiçbir paragraf öncekini özetlemiyor
 - [ ] Son paragraf yeni bir şey söylüyor ya da kesiyor; özet değil
 - [ ] Kaynak varsa cümle içinde, bir tane
-- [ ] CV ≥ 0,5; -maktadır yok
+- [ ] Yüksek sesle okununca nefes kesilmiyor ve yetmezlik yok; -maktadır yok
 - [ ] `metrik.py --tur deneme`, `kalip_tara.py`, `yapi.py --tur deneme` temiz

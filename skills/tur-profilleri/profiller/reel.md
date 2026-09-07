@@ -14,7 +14,7 @@ Kağıtta iyi duran cümle ağızda takılıyorsa yanlıştır.
 | Kelime | 60-220 |
 | Ortalama cümle | 5-12 kelime |
 | En uzun cümle | 18 kelime; onu da bir nefeste oku, olmuyorsa böl |
-| Ritim (CV) | ≥ 0,45; iki uzun cümle art arda gelmez |
+| Ritim | İki uzun cümle art arda gelmez; üç kesik cümle de art arda gelmez, konuşur gibi bağlanır |
 | Ateşman | 70-95 (kolay / çok kolay) |
 | Paragraf | Nefes başına bir satır; 3-8 satır |
 | Soru | En fazla 2; ikisi de gerçek soru, retorik değil |

@@ -39,11 +39,14 @@ Kaynak: `metrik.py` CV, paragraf CV, yüklem çeşitliliği; `references/ritim.m
 
 | Puan | Görünüm |
 |---|---|
-| 90-100 | CV ≥ 0,5; kısa cümle vuruş olarak kullanılmış; paragraflar farklı boyda; yüklem karışık |
-| 70-89 | CV 0,4-0,5; birkaç kısa cümle; hafif tekdüze paragraf |
-| 50-69 | CV 0,3-0,4; paragraflar aynı boyda; bir yüklem eki %40 üstü |
-| 30-49 | CV < 0,3; her cümle 12-18 kelime; -maktadır dizisi |
-| 0-29 | Metronom |
+| 90-100 | Cümleler birbirine yaslanıyor; kısa cümle seyrek ve vuruyor; paragraflar farklı boyda; yüklem karışık |
+| 70-89 | Birkaç yerde ya monoton ya kesik; genel akış nefesli |
+| 50-69 | Paragraflar aynı boyda ya da bir paragraf parçalı; bir yüklem eki baskın |
+| 30-49 | Ya metronom (her cümle 12-18 kelime, -maktadır dizisi) ya parçalanma (art arda üç beş kelimelik cümleler, özne her cümlede yeniden) |
+| 0-29 | Baştan sona metronom ya da baştan sona kesik |
+
+Parçalı metin, metronom metin kadar düşük puan alır. Sayı (CV) tek başına ayırt
+etmez; parçalı metnin CV'si yüksek çıkabilir. Paragrafı oku.
 
 ## 4. Somutluk (0 = soyut, 100 = somut)
 

@@ -12,8 +12,8 @@ kürsü değil.
 | Ölçü | Hedef |
 |---|---|
 | Kelime | 400-1200 |
-| Ortalama cümle | 8-16 kelime |
-| Ritim (CV) | ≥ 0,45 |
+| Ortalama cümle | 9-16 kelime |
+| Ritim | Konuşur gibi bağlı cümleler; kısa cümle seyrek ve bir şey söylüyor |
 | Ateşman | 50-75 |
 | Paragraf | 1-5 cümle; kısa paragraf serbest, ekranda okunur |
 | Ara başlık | 600 kelime üstünde serbest; başlık bir cümle ya da soru, etiket değil |

@@ -1,9 +1,9 @@
-Babam ilk bilgisayarı eve 1994'te getirdi. Kutusu buzdolabından büyüktü. Kurmak iki gün sürdü, çünkü kitapçık İngilizceydi ve evde İngilizce bilen yoktu.
+Babam ilk bilgisayarı eve 1994'te getirdi; kutusu buzdolabından büyüktü. Kurmak iki gün sürdü, çünkü kitapçık İngilizceydi ve evde İngilizce bilen yoktu.
 
-Ben o zaman dokuz yaşındaydım. Bilgisayarın ne işe yaradığını bilmiyordum; babam da bilmiyordu aslında. "Gelecek bunda," dedi, o kadar. Annem fişini çekip çekmediğimizi her akşam sordu.
+Ben o zaman dokuz yaşındaydım; bilgisayarın ne işe yaradığını bilmiyordum, babam da bilmiyordu aslında. "Gelecek bunda," dedi, o kadar. Annem her akşam fişini çekip çekmediğimizi sordu.
 
-İlk yaptığım şey Paint'te ev çizmek oldu. Sonra bir arkadaşım disket getirdi, içinde Prince of Persia vardı. Oyun bilgisayarı öğretti bana, kitapçık değil. Klavyede hangi tuşun ne yaptığını ölerek öğrendim. Bir yıl sonra DOS komutlarını ezbere biliyordum.
+İlk yaptığım şey Paint'te ev çizmek oldu. Sonra bir arkadaşım içinde Prince of Persia olan bir disket getirdi ve bilgisayarı bana kitapçık değil, o oyun öğretti. Klavyede hangi tuşun ne yaptığını ölerek öğrendim; bir yıl sonra DOS komutlarını ezbere biliyordum.
 
-Şimdi düşünüyorum da, babamın o kutuyu almasının bir mantığı yoktu. Maaşının üç katıydı. Kimse ne yapacağımızı söylememişti. Ama aldı. Yıllar sonra sordum, neden diye. "Sen öğrenirsin diye," dedi. Öğrendim.
+Şimdi düşünüyorum da, babamın maaşının üç katına o kutuyu almasının bir mantığı yoktu. Kimse ne yapacağımızı söylememişti, ama aldı. Yıllar sonra neden diye sorduğumda "Sen öğrenirsin diye," dedi. Öğrendim.
 
-Bugün oğluma tablet almak istemiyorum. Belki de yanılıyorum. Belki tablet onun disketidir. Bilmiyorum; babam da bilmiyordu.
+Bugün oğluma tablet almak istemiyorum. Belki de yanılıyorum, belki tablet onun disketidir. Bilmiyorum; babam da bilmiyordu.

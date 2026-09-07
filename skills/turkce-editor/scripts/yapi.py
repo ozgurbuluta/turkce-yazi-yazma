@@ -77,6 +77,16 @@ def incele(ham: str, tur=None) -> dict:
     soru = [c for c in cumleler if c.rstrip().endswith("?")]
     par_ilk_cumle_soru = sum(1 for p in paragraflar if (cumlelere_bol(p, kisaltmalar) or [""])[0].rstrip().endswith("?"))
 
+    kisa_diziler = []
+    dizi = []
+    for c in cumleler + [""]:
+        if c and len(kelimeler(c)) <= 5:
+            dizi.append(c)
+        else:
+            if len(dizi) >= 3:
+                kisa_diziler.append(" ".join(dizi))
+            dizi = []
+
     ilk_kelime = [tr_lower(kelimeler(c)[0]) if kelimeler(c) else "" for c in cumleler]
     ardisik_ayni = sum(1 for a, b in zip(ilk_kelime, ilk_kelime[1:]) if a and a == b)
     bas_sayac = Counter(k for k in ilk_kelime if k)
@@ -99,6 +109,7 @@ def incele(ham: str, tur=None) -> dict:
         "uclu_liste": {"sayi": len(uclu), "yuz_cumle": round(100 * len(uclu) / n_cum, 1), "ornek": uclu[:5]},
         "degil_karsitlik": {"sayi": len(degil), "yuz_cumle": round(100 * len(degil) / n_cum, 1), "ornek": degil[:5]},
         "soru": {"sayi": len(soru), "yuz_cumle": round(100 * len(soru) / n_cum, 1), "paragraf_basi": par_ilk_cumle_soru},
+        "kisa_diziler": {"sayi": len(kisa_diziler), "ornek": kisa_diziler[:3]},
         "acilis": {
             "ardisik_ayni_kelime": ardisik_ayni,
             "en_sik_cumle_basi": bas_sayac.most_common(5),
@@ -120,6 +131,8 @@ def incele(ham: str, tur=None) -> dict:
         u.append(f"Cümlelerin %{s['uclu_liste']['yuz_cumle']}'inde 'A, B ve C' üçlemesi var. İkiye indir ya da tek somut örnek ver.")
     if s["degil_karsitlik"]["sayi"] >= 2:
         u.append(f"'X değil Y' karşıtlığı {s['degil_karsitlik']['sayi']} kez. Birini bırak, diğerlerini düz cümle yap.")
+    if kisa_diziler and tur != "reel":
+        u.append(f"Art arda kısa cümle dizisi ({len(kisa_diziler)} yerde): \"{kisa_diziler[0][:90]}...\" Aralarında sebep/zaman/ardışıklık varsa ulaçla bağla.")
     if s["soru"]["paragraf_basi"] >= 2:
         u.append("Birden çok paragraf soruyla açılıyor: retorik soru tekniği tekrarlanıyor.")
     if giris_sonuc >= 0.25:
@@ -149,7 +162,7 @@ def ozet(s: dict) -> str:
     L = [
         f"Yapı: {s['kelime']} kelime, {s['cumle']} cümle, {s['paragraf']} paragraf",
         f"Biçim: başlık {b['baslik']}, madde {b['madde']} (%{b['madde_yuz']} satır), kalın {b['kalin']}, emoji {b['emoji']}, uzun tire {b['uzun_tire']}, kısa tire {b['kisa_tire']}, kıvrık tırnak {b['kivrik_tirnak']}, düzeltme işareti {b['duzeltme_isareti']}",
-        f"Üçlü liste: {s['uclu_liste']['sayi']} (%{s['uclu_liste']['yuz_cumle']} cümle); 'değil' karşıtlığı: {s['degil_karsitlik']['sayi']}; soru: {s['soru']['sayi']} (paragraf başı {s['soru']['paragraf_basi']})",
+        f"Üçlü liste: {s['uclu_liste']['sayi']} (%{s['uclu_liste']['yuz_cumle']} cümle); 'değil' karşıtlığı: {s['degil_karsitlik']['sayi']}; soru: {s['soru']['sayi']} (paragraf başı {s['soru']['paragraf_basi']}); art arda kısa cümle dizisi: {s['kisa_diziler']['sayi']}",
         f"Açılış: art arda aynı sözcük {s['acilis']['ardisik_ayni_kelime']}; en sık cümle başı " + ", ".join(f"{k} ×{n}" for k, n in s["acilis"]["en_sik_cumle_basi"]),
         f"Giriş-sonuç benzerliği: {s['giris_sonuc_jaccard']}; özet kapanışı: {'var' if s['ozet_kapanisi'] else 'yok'}",
     ]

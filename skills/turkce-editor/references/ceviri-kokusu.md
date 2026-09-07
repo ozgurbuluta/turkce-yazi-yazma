@@ -183,6 +183,24 @@ cümlede vurgu yanlış yerdedir.
 
 **Kural**: cümlenin en önemli sözcüğü fiilin hemen önünde mi? Değilse oraya taşı.
 
+## 11. Parçalı cümle: İngilizce vuruşun kopyası
+
+Ters yönde bir kopya: İngilizce reklam ve "punchy" blog dili kısa, noktayla
+kesilmiş cümleleri sever. "He bought it. He didn't know why. He learned." Türkçeye
+taşınınca "Aldı. Neden bilmiyordu. Öğrendi." olur; Türkçe okur bunu kesik ve
+özensiz bulur, çünkü Türkçe bu ilişkileri ulaçla katlar: "Neden bilmeden aldı,
+öğrendi."
+
+| Önce | Sonra |
+|---|---|
+| Kutuyu açtı. İçine baktı. Hiçbir şey anlamadı. | Kutuyu açıp içine baktı, hiçbir şey anlamadı. |
+| Eve geldim. Anladım. | Eve gelince anladım. |
+| Kitapçık İngilizceydi. Kuramadık. | Kitapçık İngilizce olduğu için kuramadık. |
+| Sordum. Neden diye. Güldü. | Neden diye sorduğumda güldü. |
+
+Kısa cümle Türkçede de vardır ve vurur; ama vuruş seyrek olunca vuruştur. Art arda
+gelen kısa cümleler çeviri izidir. Ayrıntı ve ölçüt paragraflar: `ritim.md`.
+
 ## Derlem doğrulaması
 
 Bir kalıbın doğal olup olmadığından emin değilsen "doğal" deme. Kullanıcıya şu

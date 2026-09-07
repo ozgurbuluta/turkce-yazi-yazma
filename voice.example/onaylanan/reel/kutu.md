@@ -5,20 +5,16 @@ konu: babamın maaşının üç katına aldığı bilgisayar; çocuğa teknoloji
 etiketler: [aile, teknoloji]
 ---
 
-Babam 1994'te maaşının üç katına bir bilgisayar aldı.
+Babam 1994'te, maaşının üç katına, ne işe yaradığını bilmediği bir bilgisayar aldı.
 
-Ne işe yaradığını bilmiyordu.
+Kitapçık İngilizceydi, evde İngilizce bilen yoktu; kurmak iki gün sürdü.
 
-Kitapçık İngilizceydi. Evde İngilizce bilen yoktu. Kurmak iki gün sürdü.
-
-Ben dokuz yaşındaydım. Paint'te ev çizdim. Sonra bir arkadaşım disket getirdi. Oyun.
+Ben dokuz yaşındaydım. Paint'te ev çizdim, sonra bir arkadaşım disket getirdi: oyun.
 
 Bir yıl sonra DOS biliyordum.
 
-Yıllar sonra sordum: neden aldın?
+Yıllar sonra neden aldın diye sorduğumda tek şey söyledi: "Sen öğrenirsin diye."
 
-"Sen öğrenirsin diye."
-
-Şimdi oğluma tablet almak istemiyorum. Belki tablet onun disketi. Bilmiyorum.
+Şimdi oğluma tablet almak istemiyorum. Belki tablet onun disketi, bilmiyorum.
 
 Sen olsan alır mıydın?

@@ -23,9 +23,9 @@ from trmetin import (BAGLACLAR, bin_basina, cumlelere_bol, cv, dosya_oku, hece_s
 # Kalibrasyon: docs/yontem.md — Faz 6'da insan külliyatı yüzdelikleriyle güncellenir.
 TUR_HEDEF = {
     "reel": {"atesman": (70, 95), "cumle_ort": (5, 12), "cv_min": 0.45, "kelime": (60, 220)},
-    "deneme": {"atesman": (45, 75), "cumle_ort": (9, 18), "cv_min": 0.50, "kelime": (500, 1500)},
+    "deneme": {"atesman": (45, 75), "cumle_ort": (10, 18), "cv_min": 0.50, "kelime": (500, 1500)},
     "makale": {"atesman": (35, 60), "cumle_ort": (12, 20), "cv_min": 0.45, "kelime": (700, 2500)},
-    "blog": {"atesman": (50, 75), "cumle_ort": (8, 16), "cv_min": 0.45, "kelime": (400, 1200)},
+    "blog": {"atesman": (50, 75), "cumle_ort": (9, 16), "cv_min": 0.45, "kelime": (400, 1200)},
 }
 
 ZAMIRLER = {"ben", "biz", "siz", "sen", "onlar"}
@@ -192,6 +192,8 @@ def hesapla(metin: str, tur=None) -> dict:
     u = sonuc["uyarilar"]
     if n_cum >= 8 and sonuc["cumle_uzunlugu"]["cv"] < 0.35:
         u.append(f"Cümle uzunlukları tekdüze (CV={sonuc['cumle_uzunlugu']['cv']}). İnsan yazısında genelde 0,5 üstü: kısa cümleyi uzunun yanına koy.")
+    if n_cum >= 8 and sonuc["cumle_uzunlugu"]["kisa_pay"] >= 0.5 and (tur != "reel"):
+        u.append(f"Cümlelerin %{int(sonuc['cumle_uzunlugu']['kisa_pay'] * 100)}'i altı kelime ve altında: parçalanma olabilir. Paragrafları oku; art arda kısa cümleler ulaçla bağlanabilir mi?")
     if len(paragraflar) >= 4 and sonuc["paragraf_uzunlugu"]["cv_kelime"] < 0.25:
         u.append("Paragraflar aynı boyda. Birini tek cümleye indir, birini uzat.")
     if yuklem_pay.get("-maktadır", 0) > 0.15:
